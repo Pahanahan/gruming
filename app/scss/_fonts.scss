@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'BebasNeueCyrillic';
+  font-weight: 400;
+  font-style: normal;
+  src: local('BebasNeueCyrillic'),
+    url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+    url('../fonts/BebasNeueCyrillic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeraProRegular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('CeraProRegular'),
+    url('../fonts/CeraProRegular.woff2') format('woff2'),
+    url('../fonts/CeraProRegular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeraProMedium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('CeraProMedium'),
+    url('../fonts/CeraProMedium.woff2') format('woff2'),
+    url('../fonts/CeraProMedium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeraProBold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CeraProBold'),
+    url('../fonts/CeraProBold.woff2') format('woff2'),
+    url('../fonts/CeraProBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSansLight';
+  font-weight: 300;
+  font-style: normal;
+  src: local('MuseoSansLight'),
+    url('../fonts/MuseoSansLight.woff2') format('woff2'),
+    url('../fonts/MuseoSansLight.woff') format('woff');
+  font-display: swap;
+}

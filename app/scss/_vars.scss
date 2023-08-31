@@ -1,0 +1,40 @@
+$fff: #fff;
+$violet: #8050A3;
+$input: #828282;  
+$text: #4D4D4D;
+$green: #2AA385;
+
+$default-btn-green: (linear-gradient(180deg, #2CA88A 0%, #2AA385 100%));
+$default-btn-shadow: 0px 0px 0px 0px rgba(64, 64, 64, 0.15), 0px 1px 2px 0px rgba(64, 64, 64, 0.15), 0px 4px 4px 0px rgba(64, 64, 64, 0.13), 0px 23px 7px 0px rgba(64, 64, 64, 0.00);
+$active-btn-green: (linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%));
+$active-btn-shadow: 0px 0px 0px 0px rgba(11, 55, 16, 0.30) inset, 0px 1px 1px 0px rgba(11, 55, 16, 0.29) inset, 0px 3px 3px 0px rgba(11, 55, 16, 0.26) inset, 0px 6px 3px 0px rgba(11, 55, 16, 0.15) inset, 0px 10px 4px 0px rgba(11, 55, 16, 0.04) inset, 0px 16px 4px 0px rgba(11, 55, 16, 0.01) inset;
+
+%museo {
+  font-family: 'MuseoSansLight';
+  font-weight: 300;
+  font-style: normal;
+}
+
+%bebas {
+  font-family: 'BebasNeueCyrillic';
+  font-weight: 400;
+  font-style: normal;
+}
+
+%cera-400 {
+  font-family: 'CeraProRegular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+%cera-500 {
+  font-family: 'CeraProMedium';
+  font-weight: 500;
+  font-style: normal;
+}
+
+%cera-700 {
+  font-family: 'CeraProBold';
+  font-weight: 700;
+  font-style: normal;
+}

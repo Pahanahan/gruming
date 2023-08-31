@@ -1,0 +1,56 @@
+.gradient-text {
+  background-image: (linear-gradient(180deg, #5A5A5A 0%, #4D4D4D 100%));
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text--active {
+  background: (linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%));
+  background-clip: text;
+  color: transparent;
+}
+
+
+&__choice-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+&__choice-item-label {
+  position: relative;
+  bottom: 37px;
+  left: 101px;
+}
+
+&__choice-item-checkbox {
+  right: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #BDBDBD;
+  position: absolute;
+  background-image: url('../images/icons/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+&__choice-item-input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+
+  &:checked+.questions__choice-item-checkbox {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-image: url('../images/icons/menu-btn.svg');
+      background-color: #2DFF4E;
+    }
+  }
+}

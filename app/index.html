@@ -1,0 +1,3502 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="application application--disactive">
+    <button class="application__btn-close">
+      <img src="images/icons/close-violet.svg" alt="close">
+    </button>
+    <div class="application__inner">
+      <h3 class="application__title title">
+        Запишитесь на услуги студии «PROХВОСТ»
+      </h3>
+      <p class="application__text">
+        Просто оставьте свои контакты и мы свяжемся с вами
+        <span>в течение 3 минут</span>
+      </p>
+      <form class="before__bottom-form" name="registration" method="post">
+        <div class="before__bottom-input-name-box">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status()"
+            onchange="change_Status()" name="name">
+        </div>
+        <div class="before__bottom-input-tel-box">
+          <input class="before__bottom-input-tel" type="tel" placeholder="+7 (___) ___ ___ __" onkeyup="change_Status()"
+            onchange="change_Status()" name="tel">
+        </div>
+        <button class="before__bottom-btn btn-gold btn-application" name="start">
+          ОСТАВИТЬ ЗАЯВКУ
+        </button>
+      </form>
+      <label class="before__bottom-label">
+        <input class="discount__bottom-input-check" type="checkbox">
+        <span class="discount__bottom-checkbox"></span>
+        <span class="discount__bottom-input-text">
+          Согласие на обработку персональных данных
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <div class="thanks thanks--disactive">
+    <div class="container">
+      <div class="thanks__inner">
+        <button class="thanks__btn-close">
+          <img src="images/icons/close-violet.svg" alt="close">
+        </button>
+        <h3 class="thanks__title title">
+          спасибо!
+        </h3>
+        <p class="thanks__text">
+          Ваша заявка принята! Мы свяжемся
+          с вами в течение 3 минут
+        </p>
+        <img class="thanks__img" src="images/girl-thanks.png" alt="thanks">
+        <button class="thanks__btn btn-gold">
+          понятно, спасибо
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <menu class="menu-margin-top"></menu>
+      <menu class="menu">
+        <button class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Собаки
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Кошки
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Акции
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Салон
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Блог
+            </a>
+          </li>
+        </ul>
+        <a class="menu__logo">
+          Proхвост
+        </a>
+        <div class="menu__contacts">
+          <a class="menu__address">
+            г. Алматы, ул. Предгорная, 33
+          </a>
+          <a class="menu__phone" href="tel:+79528230647">
+            8 (952) 823-06-47
+          </a>
+        </div>
+      </menu>
+      <div class="header__content">
+        <div class="header__content-left">
+          <h1 class="header__content-title">
+            Груминг питомца за 50 минут –
+            100% без стресса от 5 000 ₸
+          </h1>
+          <p class="header__content-text">
+            Благодаря мастерам с 5 летним стажем владеющими адаптационными техниками работы с питомцами
+          </p>
+          <div class="header__button-box">
+            <button class="header__button btn-gold btn-applic">
+              оставить заявку
+            </button>
+            <span>
+              Свяжемся с вами в течение 3 минут
+            </span>
+          </div>
+          <div class="header__content-info">
+            <div class="header__content-info-item header__content-info-garant">
+              100% гарантия безопасности и стерильности
+            </div>
+            <div class="header__content-info-item header__content-info-master">
+              Сертифицированные мастера со стажем от 5 лет
+            </div>
+            <div class="header__content-info-item header__content-info-percent">
+              Скидка 10% на первое посещение
+            </div>
+            <div class="header__content-info-item header__content-info-profession">
+              Профессиональная
+              косметика и инструменты
+            </div>
+          </div>
+        </div>
+        <div class="header__content-right">
+          <div class="header__content-right-slider">
+            <div class="header__content-right-slider-item">
+            </div>
+            <div class="header__content-right-slider-item-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">
+          Обращаясь к нам впервые 90% клиентов остаются с нами навсегда!
+        </h2>
+        <p class="services__text">
+          Комфорт питомца и качество услуг - основа на которой строится наш принцип работы
+        </p>
+        <div class="services__box">
+          <div class="services__item"
+            style="background-image: url('images/services/1.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Специалисты с
+              опытом от 5 лет
+            </h4>
+            <p class="services__item-text">
+              Мастера проходят контроль качества работ и ежегодно повышают квалификацию
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/2.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Профессиональные инструменты и оборудование
+            </h4>
+            <p class="services__item-text">
+              Используем в работе такие бренды, как: Komondor,
+              Wahl, Moser
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/3.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Гипоаллергенная косметика и препараты
+            </h4>
+            <p class="services__item-text">
+              Используем только профессиональную косметику: Iv San Bernard, Milord, Pro Animal
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/4.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Полный отказ от наркоза
+            </h4>
+            <p class="services__item-text">
+              Благодаря базовым знаниям кинологии и зоопсихологии, владеем адаптационными техниками животных
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/5.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              100% безопасность
+            </h4>
+            <p class="services__item-text">
+              Все инструменты подвергаются стерилизации проф. средствами после каждого клиента
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/6.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Присутствие во время процедур
+            </h4>
+            <p class="services__item-text">
+              Для вашего спокойствия, вы можете присутствовать во время процедур
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/7.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Консультация по уходу в домашних условиях в подарок
+            </h4>
+            <p class="services__item-text">
+              Специалист проконсультирует, как правильно ухаживать за животным дома
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/8.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Знания основ ветеринарии
+            </h4>
+            <p class="services__item-text">
+              Мастера владеют базовыми знаниями ветеринарии
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/9.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              зона ожидания для клиентов
+            </h4>
+            <p class="services__item-text">
+              Комфортная зона с креслами, бесплатным wi-fi, ароматным кофе, чаем и печеньем
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/10.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Видеонаблюдение
+              за ходом процедуры
+            </h4>
+            <p class="services__item-text">
+              Вы сможете наблюдать за ходом процедуры и состоянием вашего четвероногого друга
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/11.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              2 часа передержки
+              бесплатно
+            </h4>
+            <p class="services__item-text">
+              Питомец дождется вас с комфортом. В услугу входят корм, вода, лежанка и лоток
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/12.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              принимаем даже агрессивных и пожилых питомцев
+            </h4>
+            <p class="services__item-text">
+              Знаем зоопсихологию и понимаем, как вести себя со сложными питомцами и как их успокоить
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="find">
+      <div class="container">
+        <div class="find__inner">
+          <div class="find__info">
+            <h2 class="find__title">
+              Не нашли нужную вам услугу?
+            </h2>
+            <p class="find__text">
+              Оставьте заявку и мы найдем для вас решение!
+            </p>
+            <form class="find__form" action="#">
+              <div class="find__input-name">
+                <input class="find__input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="find__input-phone">
+                <input class="find__input" type="text" placeholder="+7 (___) ___ ___ __">
+              </div>
+            </form>
+            <div class="find__box">
+              <button class="find__box-btn btn-gold">
+                Записаться
+              </button>
+              <p class="find__box-text">
+                Нажимая на кнопку, вы соглашаетесь
+                с условиями <a href="#">
+                  Политики
+                  конфиденциальности
+                </a>
+              </p>
+            </div>
+            <p class="find__phone">
+              Или звоните по номеру <a href="tel:+79528230647">+7 952 823 06 47</a>
+            </p>
+          </div>
+          <div class="find__content">
+            <img class="find__content-img" src="images/avatar.png" alt="avatar">
+            <p class="find__content-name">
+              Анна Некифорова
+            </p>
+            <p class="find__content-profession">
+              Старший менеджер
+            </p>
+            <div class="find__content-box">
+              <p class="find__content-box-text">
+                Добрый день! Меня зовут Анна и я ваш менджер.
+              </p>
+              <p class="find__content-box-text">
+                С радостью отвечу на все интересующие вас вопросы
+              </p>
+            </div>
+            <img class="find__content-img-bg" src="images/dog-bg.png" alt="dog">
+            <img class="find__content-img-telegram" src="images/telegram.png" alt="telegram">
+            <img class="find__content-img-telegram-2" src="images/telegram-2.png" alt="telegram">
+            <img class="find__content-img-telegram-3" src="images/telegram-3.png" alt="telegram">
+            <img class="find__content-img-paw" src="images/paw.png" alt="paw">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__title">
+          Ответьте на 3 вопроса и получите <a href="#">скидку 15%</a> на все услуги груминг салона “Название”
+        </h2>
+        <div class="questions__inner">
+
+          <div class="questions__choice">
+            <div class="questions__choice-top">
+              <div class="questions__choice-top-step">
+                Шаг 1
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 2
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 3
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 4
+              </div>
+            </div>
+            <div class="questions__choice-line">
+              <span class="questions__choice-line-violet"></span>
+            </div>
+            <h3 class="questions__choice-title">
+              1.У вас кошка или собака?
+            </h3>
+            <div class="questions__choice-box">
+              <div class="questions__choice-item">
+                <img class="questions__choice-item-img" src="images/animal/cat.png" alt="cat">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="animal">
+                  <span class="questions__choice-item-checkbox"></span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <img class="questions__choice-item-img" src="images/animal/dog.png" alt="dog">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="animal">
+                  <span class="questions__choice-item-checkbox"></span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <img class="questions__choice-item-img" src="images/animal/some-animal.png" alt="some-animal">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="animal">
+                  <span class="questions__choice-item-checkbox"></span>
+                </label>
+              </div>
+            </div>
+            <button class="questions__choice-btn btn-gold">
+              следующий шаг
+            </button>
+          </div>
+
+          <div class="questions__choice--2 questions__choice--disactive">
+            <div class="questions__choice-top">
+              <div class="questions__choice-top-step">
+                Шаг 1
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 2
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 3
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 4
+              </div>
+            </div>
+            <div class="questions__choice-line">
+              <span class="questions__choice-line-violet questions__choice-line-violet--60"></span>
+            </div>
+            <h3 class="questions__choice-title">
+              2.какая услуга вам нужна?
+            </h3>
+            <div class="questions__choice-box">
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Гигиена
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Стрижка
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Экспресс-линька
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Стрижка ногтей
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Мытье и сушка
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Чистка ушей и глаз
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Тримминг
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Чистка зубов
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="checkbox" name="service">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    SPA
+                  </span>
+                </label>
+              </div>
+            </div>
+            <input class="questions__choice-input" type="text" placeholder="Впишите свой вариант ответа">
+            <div class="questions__choice-box-buttons">
+              <button class="questions__btn-back">
+                НАЗАД
+              </button>
+              <button class="questions__choice-btn--2 btn-gold">
+                следующий шаг
+              </button>
+            </div>
+          </div>
+
+          <div class="questions__choice--3 questions__choice--disactive">
+            <div class="questions__choice-top">
+              <div class="questions__choice-top-step">
+                Шаг 1
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 2
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 3
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 4
+              </div>
+            </div>
+            <div class="questions__choice-line">
+              <span class="questions__choice-line-violet questions__choice-line-violet--40"></span>
+            </div>
+            <h3 class="questions__choice-title">
+              3.В какое время вам удобно посетить наш салон?
+            </h3>
+            <div class="questions__choice-box">
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="time">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    До 10:00
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="time">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    С 10:00 до 14:00
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="time">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    С 14:00 до 18:00
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <input class="questions__choice-item-input" type="radio" name="time">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    После 18:00
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="questions__choice-box-buttons">
+              <button class="questions__btn-back-2">
+                НАЗАД
+              </button>
+              <button class="questions__choice-btn--3 btn-gold">
+                следующий шаг
+              </button>
+            </div>
+          </div>
+
+          <div class="questions__choice--4 questions__choice--disactive">
+            <div class="questions__choice-top">
+              <div class="questions__choice-top-step">
+                Шаг 1
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 2
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 3
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 4
+              </div>
+            </div>
+            <div class="questions__choice-line">
+              <span class="questions__choice-line-violet questions__choice-line-violet--20"></span>
+            </div>
+            <h3 class="questions__choice-title">
+              4.выберите подарок к услуге
+            </h3>
+            <div class="questions__choice-box">
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <img class="questions__choice-item-img" src="images/questions-files/item-1.png" alt="present">
+                  <input class="questions__choice-item-input" type="radio" name="present">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Игрушка из нашего магазина
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <img class="questions__choice-item-img" src="images/questions-files/item-2.png" alt="present">
+                  <input class="questions__choice-item-input" type="radio" name="present">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Лакомство для вашего питомца
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <img class="questions__choice-item-img" src="images/questions-files/item-3.png" alt="present">
+                  <input class="questions__choice-item-input" type="radio" name="present">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Украшение
+                  </span>
+                </label>
+              </div>
+              <div class="questions__choice-item">
+                <label class="questions__choice-item-label">
+                  <img class="questions__choice-item-img" src="images/questions-files/item-4.png" alt="present">
+                  <input class="questions__choice-item-input" type="radio" name="present">
+                  <span class="questions__choice-item-checkbox"></span>
+                  <span class="questions__choice-item-text">
+                    Шампунь для бережного мытья
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="questions__choice-box-buttons">
+              <button class="questions__btn-back-3">
+                НАЗАД
+              </button>
+              <button class="questions__choice-btn--4 btn-gold">
+                следующий шаг
+              </button>
+            </div>
+          </div>
+
+          <div class="questions__choice--5 questions__choice--disactive">
+            <div class="questions__choice-top">
+              <div class="questions__choice-top-step">
+                Шаг 1
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 2
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 3
+              </div>
+              <div class="questions__choice-top-step">
+                Шаг 4
+              </div>
+            </div>
+            <div class="questions__choice-line">
+              <span class="questions__choice-line-violet questions__choice-line-violet--0"></span>
+            </div>
+            <h3 class="questions__choice-title">
+              Остался последний шаг!
+            </h3>
+            <p class="questions__choice-text">
+              Введите ваши контактные данные и мы закрепим за вами <span>скидку 15%</span>
+            </p>
+            <div class="questions__choice-box">
+              <div class="questions__choice-item">
+                <div class="before__bottom-input-name-box">
+                  <input type="text" class="before__bottom-input-name" placeholder="Введите ваше имя">
+                </div>
+                <div class="before__bottom-input-tel-box">
+                  <input type="tel" class="before__bottom-input-tel" placeholder="+7 (___) ___ ___ __">
+                </div>
+              </div>
+            </div>
+            <div class="questions__choice-box-buttons">
+              <button class="questions__btn-back-4">
+                НАЗАД
+              </button>
+              <button class="questions__choice-btn--5 btn-gold">
+                получить скидку
+              </button>
+            </div>
+            <label class="before__bottom-label">
+              <input class="discount__bottom-input-check" type="checkbox">
+              <span class="discount__bottom-checkbox"></span>
+              <span class="discount__bottom-input-text">
+                Я принимаю условия Соглашения
+              </span>
+            </label>
+          </div>
+
+          <div class="questions__choice--6 questions__choice--disactive">
+            <h3 class="questions__choice-title">
+              Остался последний шаг!
+            </h3>
+            <p class="questions__choice-text">
+              Наш менеджер свяжется с вами в течение 3 минут
+            </p>
+            <img src="images/questions-files/girl-2.png" alt="girl">
+            <button class="questions__choice-btn--6 btn-gold">
+              понятно, спасибо
+            </button>
+          </div>
+
+          <div class="questions__test">
+            <h4 class="questions__test-title">
+              Пройдите тест и получите
+            </h4>
+            <div class="questions__test-box">
+              <div class="questions__test-item">
+                <p class="questions__test-item-text questions__test-item-text-1">
+                  Консультацию
+                  профессионального
+                  грумера
+                </p>
+                <img class="questions__test-item-girl-img" src="images/questions-files/girl.png" alt="girl">
+              </div>
+              <div class="questions__test-item">
+                <p class="questions__test-item-text questions__test-item-text-2">
+                  Скидку на
+                  первое
+                  обращение
+                </p>
+                <p class="questions__test-item-percent">
+                  15%
+                </p>
+                <img class="questions__test-item-1-img" src="images/questions-files/1.png" alt="">
+                <img class="questions__test-item-2-img" src="images/questions-files/2.png" alt="">
+                <img class="questions__test-item-3-img" src="images/questions-files/3.png" alt="">
+              </div>
+              <div class="questions__test-item">
+                <p class="questions__test-item-text questions__test-item-text-3">
+                  Подарок
+                  на выбор
+                </p>
+                <img class="questions__test-item-collar-img" src="images/questions-files/collar.png" alt="collar">
+                <img class="questions__test-item-dog-img" src="images/questions-files/dog.png" alt="dog">
+                <img class="questions__test-item-color-img" src="images/questions-files/color.png" alt="color">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="dog-cat">
+      <div class="container">
+        <div class="dog-cat__inner">
+          <h2 class="dog-cat__title">
+            Мы обслуживаем все породы собак
+            и кошек без исключений
+          </h2>
+          <div class="dog-cat__btn-box">
+            <span class="dog-cat__btn-text">
+              Собаки
+            </span>
+            <button class="dog-cat__btn">Кошки</button>
+          </div>
+          <div class="dog-cat__btn-box-2 dog-cat__btn-box--disactive">
+            <button class="dog-cat__btn-2">Собаки</button>
+            <span class="dog-cat__btn-text">
+              Кошки
+            </span>
+          </div>
+
+          <div class="dog-cat__dog">
+
+            <div class="dog-cat-dog__slick">
+
+              <div class="dog-cat__dog-box">
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-1.png" alt="dog">
+                  </div>
+                  ШПИЦ
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-2.png" alt="dog">
+                  </div>
+                  Чихуахуа
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-3.png" alt="dog">
+                  </div>
+                  Китайская хохлатая
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-4.png" alt="dog">
+                  </div>
+                  Йоркширский терьер
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-5.png" alt="dog">
+                  </div>
+                  Норвич
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-6.png" alt="dog">
+                  </div>
+                  Цвергшнауцер
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-7.png" alt="dog">
+                  </div>
+                  Мальтипу
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-8.png" alt="dog">
+                  </div>
+                  Ши-тцу
+                </div>
+              </div>
+
+              <div class="dog-cat__dog-box">
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-9.png" alt="dog">
+                  </div>
+                  Такса
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-10.png" alt="dog">
+                  </div>
+                  Французский бульдог
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-11.png" alt="dog">
+                  </div>
+                  Бишон фризе
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-12.png" alt="dog">
+                  </div>
+                  Пудель
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-13.png" alt="dog">
+                  </div>
+                  Пекинес
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-14.png" alt="dog">
+                  </div>
+                  Мальтезе
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-15.png" alt="dog">
+                  </div>
+                  Лабрадор
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-16.png" alt="dog">
+                  </div>
+                  Чау-чау
+                </div>
+              </div>
+
+              <div class="dog-cat__dog-box">
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-17.png" alt="dog">
+                  </div>
+                  Сиба-ину
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-18.png" alt="dog">
+                  </div>
+                  Эрдельтерьер
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-19.png" alt="dog">
+                  </div>
+                  Корги
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-20.png" alt="dog">
+                  </div>
+                  Хаски
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-21.png" alt="dog">
+                  </div>
+                  Самоед
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-22.png" alt="dog">
+                  </div>
+                  Фокстерьер
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-23.png" alt="dog">
+                  </div>
+                  Спаниель
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/dog-24.png" alt="dog">
+                  </div>
+                  джек рассел
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="dog-cat__cat dog-cat--disactive">
+
+            <div class="dog-cat-cat__slick">
+
+              <div class="dog-cat__cat-box">
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/cat-1.png" alt="dog">
+                  </div>
+                  Шотландская<br> кошка
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/cat-2.png" alt="dog">
+                  </div>
+                  Британская кошка
+                </div>
+                <div class="dog-cat__dog-item">
+                  <div class="dog-cat__dog-item-bg">
+                    <span></span>
+                    <img src="images/dog-cat/cat-3.png" alt="dog">
+                  </div>
+                  Мейн-кун
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spa">
+      <div class="container">
+        <h2 class="spa__title white-title">
+          Услуги, которые позволят вашему питомцу выглядеть безупречно
+        </h2>
+        <div class="spa__top">
+          <span class="spa__top-text">
+            А вам наслаждаться результатом и сократить частоту уборок дома
+          </span>
+          <div class="spa__top-btn-box">
+            <span class="spa__top-btn-text">
+              Собаки
+            </span>
+            <button class="spa__top-btn">
+              Кошки
+            </button>
+          </div>
+
+        </div>
+        <div class="spa__inner">
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-1">
+              Гигиена
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Забривание лап между подушечек
+              </li>
+              <li class="spa__item-item">
+                Забривание паховой зоны
+              </li>
+              <li class="spa__item-item">
+                Чистка либо выщипывание ушей, чистка глаз
+              </li>
+              <li class="spa__item-item">
+                Купание, сушка
+              </li>
+              <li class="spa__item-item">
+                Подравнивание стрижки
+                по контуру
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                7 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-2">
+              Стрижка
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Купание, сушка
+              </li>
+              <li class="spa__item-item">
+                Стрижка на выбор
+              </li>
+              <li class="spa__item-item">
+                Стрижка машинкой или ножницами по корпусу
+              </li>
+              <li class="spa__item-item">
+                Подстригание когтей
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                7 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-3">
+              Экспресс- линька
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Вычесывание
+              </li>
+              <li class="spa__item-item">
+                Выдув шерсти компрессором
+              </li>
+              <li class="spa__item-item">
+                Питающий бальзам от
+                выпадения шерсти
+              </li>
+              <li class="spa__item-item">
+                Подстригание когтей
+              </li>
+              <li class="spa__item-item">
+                Чистка глаз и ушей
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                7 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-4">
+              тримминг
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Расчесывание (+дополнительно распутывание колтунов)
+              </li>
+              <li class="spa__item-item">
+                Выщипывание шерсти
+              </li>
+              <li class="spa__item-item">
+                Вычесывание
+              </li>
+              <li class="spa__item-item">
+                Мытье, сушка
+              </li>
+              <li class="spa__item-item">
+                Успокаивание кожи после
+                процедуры
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                5 000 ₸/час
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-5">
+              spa-процедуры
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Обертывание, скрабирование
+              </li>
+              <li class="spa__item-item">
+                Увлажняющие маски для улучшения структуры шерсти
+              </li>
+              <li class="spa__item-item">
+                Озонотерапия, микромассаж
+              </li>
+              <li class="spa__item-item">
+                Лечебная косметика
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                3 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-6">
+              профилактическая
+              чистка зубов
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Профилактическая чистка специльными пастой и щетками
+              </li>
+              <li class="spa__item-item">
+                Профилактика зубного камня
+              </li>
+              <li class="spa__item-item">
+                Избавление от неприятного
+                запаха
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                8 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-7">
+              креативное
+              окрашивание
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Креативные узоры
+              </li>
+              <li class="spa__item-item">
+                Окрашивание
+              </li>
+              <li class="spa__item-item">
+                Блеск-тату
+              </li>
+              <li class="spa__item-item">
+                Украшение стразами
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                1 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item">
+            <h4 class="spa__item-title spa__item-title-8">
+              зоотакси
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Перевозка питомца
+              </li>
+              <li class="spa__item-item">
+                Пеленки
+              </li>
+              <li class="spa__item-item">
+                Выгул животного
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                7 000 ₸
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <button class="spa__btn btn-gold">
+          Записаться
+        </button>
+      </div>
+    </section>
+
+    <section class="spa-cat spa--disactive">
+      <div class="container">
+        <h2 class="spa__title white-title">
+          Услуги, которые позволят вашему питомцу выглядеть безупречно
+        </h2>
+        <div class="spa__top">
+          <span class="spa__top-text">
+            А вам наслаждаться результатом и сократить частоту уборок дома
+          </span>
+          <div class="spa__top-btn-box">
+            <button class="spa__top-btn-2">
+              Собаки
+            </button>
+            <span class="spa__top-btn-text">
+              Кошки
+            </span>
+          </div>
+        </div>
+        <div class="spa__inner spa-cat__inner">
+
+          <div class="spa__item spa-cat__item">
+            <h4 class="spa__item-title spa__item-title-3">
+              Экспресс- линька
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Вычесывание
+              </li>
+              <li class="spa__item-item">
+                Купание (очищение, увлажнение, питание)
+              </li>
+              <li class="spa__item-item">
+                Выдув шерсти компрессором
+              </li>
+              <li class="spa__item-item">
+                Гигиена когтей, глаз и ушей
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                7 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item spa-cat__item">
+            <h4 class="spa__item-title spa__item-title-2">
+              Стрижка
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Подравниевание контуров головы, лап, хвоста
+              </li>
+              <li class="spa__item-item">
+                Стижка под машинку
+              </li>
+              <li class="spa__item-item">
+                Купание, сушка
+              </li>
+              <li class="spa__item-item spa__item-item-recomend">
+                Рекомендуется в случае колтунов, ветеринарных указаний, сильной аллергии у владельцев
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                7 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item spa-cat__item">
+            <h4 class="spa__item-title spa__item-title-6">
+              профилактическая
+              чистка зубов
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Профилактическая чистка специльными пастой и щетками
+              </li>
+              <li class="spa__item-item">
+                Профилактика зубного камня
+              </li>
+              <li class="spa__item-item">
+                Избавление от неприятного
+                запаха
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                8 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item spa-cat__item">
+            <h4 class="spa__item-title spa__item-title-5">
+              spa-процедуры
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Кондиционеры, спреи
+              </li>
+              <li class="spa__item-item">
+                Итающие, увлажняющие маски для улучшения структуры шерсти
+              </li>
+              <li class="spa__item-item">
+                Скрабирование
+              </li>
+              <li class="spa__item-item">
+                Микромассаж
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                3 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item spa-cat__item">
+            <h4 class="spa__item-title spa__item-title-7">
+              креативный груминг
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Выбривание узоров
+              </li>
+              <li class="spa__item-item">
+                Сохранение гривы во время стрижки
+              </li>
+              <li class="spa__item-item">
+                Силиконовые накладные колпачки на когти
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                4 000 ₸
+              </span>
+            </div>
+          </div>
+
+          <div class="spa__item spa-cat__item">
+            <h4 class="spa__item-title spa__item-title-8">
+              зоотакси
+            </h4>
+            <ul class="spa__item-list">
+              <li class="spa__item-item">
+                Перевозка питомца
+              </li>
+              <li class="spa__item-item">
+                Пеленки
+              </li>
+              <li class="spa__item-item">
+                Выгул животного
+              </li>
+            </ul>
+            <div class="spa__item-box-price">
+              <span class="spa__item-price">
+                Цена:
+              </span>
+              <span class="spa__item-price-number">
+                5 000 ₸
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <button class="spa__btn btn-gold">
+          Записаться
+        </button>
+      </div>
+    </section>
+
+    <section class="discount">
+      <div class="container">
+        <h2 class="discount__title title">
+          Получите <a class="discount__title-link" href="#">скидку 20%</a> при заказе комплекса услуг
+        </h2>
+        <p class="discount__text">
+          Наша задача – выполнить процедуру идеально, с заботой, а главное при этом, не навредив!
+        </p>
+        <div class="discount__inner">
+
+          <div class="discount__item">
+            <img class="discount__item-img" src="images/discount/dog.png" alt="dog">
+            <h5 class="discount__item-title">
+              комплекс услуг для собак
+            </h5>
+            <div class="discount__item-box">
+              <ul class="discount__item-box-list">
+                <li class="discount__item-box-item">
+                  Мытье-сушка
+                </li>
+                <li class="discount__item-box-item">
+                  Вычесывание
+                </li>
+                <li class="discount__item-box-item">
+                  Стрижка модельная
+                </li>
+              </ul>
+              <ul class="discount__item-box-list">
+                <li class="discount__item-box-item">
+                  Уход за ушами
+                </li>
+                <li class="discount__item-box-item">
+                  Уход за глазами
+                </li>
+                <li class="discount__item-box-item">
+                  Уход за когтями
+                </li>
+              </ul>
+            </div>
+            <div class="discount__item-price-box">
+              <span class="discount__item-price">
+                Цена:
+              </span>
+              <span class="discount__item-price-number">
+                25 000 ₸
+              </span>
+              <span class="discount__item-price-discount">
+                45 000 ₸
+              </span>
+            </div>
+            <button class="discount__btn btn-gold">
+              Записаться
+            </button>
+          </div>
+
+          <div class="discount__item">
+            <img class="discount__item-img" src="images/discount/cat.png" alt="dog">
+            <h5 class="discount__item-title">
+              комплекс услуг для кошек
+            </h5>
+            <div class="discount__item-box">
+              <ul class="discount__item-box-list">
+                <li class="discount__item-box-item">
+                  Мытье-сушка
+                </li>
+                <li class="discount__item-box-item">
+                  Вычесывание
+                </li>
+                <li class="discount__item-box-item">
+                  Стрижка модельная
+                </li>
+              </ul>
+              <ul class="discount__item-box-list">
+                <li class="discount__item-box-item">
+                  Уход за ушами
+                </li>
+                <li class="discount__item-box-item">
+                  Уход за глазами
+                </li>
+                <li class="discount__item-box-item">
+                  Уход за когтями
+                </li>
+              </ul>
+            </div>
+            <div class="discount__item-price-box">
+              <span class="discount__item-price">
+                Цена:
+              </span>
+              <span class="discount__item-price-number">
+                35 000 ₸
+              </span>
+              <span class="discount__item-price-discount">
+                50 000 ₸
+              </span>
+            </div>
+            <button class="discount__btn btn-gold">
+              Записаться
+            </button>
+          </div>
+
+        </div>
+
+        <img class="discount__bg-image-1" src="images/discount/bg-1.png"></img>
+        <img class="discount__bg-image-2" src="images/discount/bg-2.png"></img>
+        <img class="discount__bg-image-3" src="images/discount/bg-3.png"></img>
+        <img class="discount__bg-image-4" src="images/discount/bg-4.png"></img>
+        <img class="discount__bg-image-5" src="images/discount/bg-5.png"></img>
+        <img class="discount__bg-image-6" src="images/discount/bg-6.png"></img>
+        <img class="discount__bg-image-7" src="images/discount/bg-7.png"></img>
+
+        <div class="discount__bottom">
+          <div class="discount__bottom-content">
+            <h3 class="discount__bottom-content-title">
+              Доверьте нам заботу о вашем питомце
+            </h3>
+            <p class="discount__bottom-content-text">
+              Оставьте заявку и наш менеджер свяжется с вами в течение 3 минут
+            </p>
+          </div>
+          <div class="discount__bottom-form">
+            <div class="discount__bottom-input-tel-box">
+              <input class="discount__bottom-input-tel" type="tel" placeholder="+7 (___) ___ ___ __">
+            </div>
+            <button class="discount__bottom-btn btn-gold">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+            <label class="discount__bottom-label">
+              <input class="discount__bottom-input-check" type="checkbox">
+              <span class="discount__bottom-checkbox"></span>
+              <span class="discount__bottom-input-text">
+                Я принимаю условия Соглашения
+              </span>
+            </label>
+          </div>
+          <img class="discount__bottom-img" src="images/girl-bg.png" alt="girl">
+        </div>
+      </div>
+    </section>
+
+    <section class="masters">
+      <div class="container">
+        <h2 class="masters__title title">
+          Все мастера салона "название" ежегодно повышают квалификацию
+        </h2>
+
+        <div class="masters__slick">
+
+          <div class="masters__inner">
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="masters__inner">
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/2.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+            <div class="masters__item">
+              <img src="images/masters/1.png" alt="master">
+              <h6 class="masters__item-experience">
+                Опыт:10 лет
+              </h6>
+              <h4 class="masters__item-name">
+                Новикова Мария Алексеевна
+              </h4>
+              <p class="masters__item-text">
+                Работает с овчарками, мейн-кун
+              </p>
+              <div class="masters__item-spec">
+                специализация:
+                <span class="masters__item-specialist">
+                  Парикмахер собак
+                </span>
+              </div>
+              <div class="masters__item-rateyo-box">
+                <div class="masters__item-rateyo"></div>
+                <span class="masters__item-review">
+                  (25 отзывов)
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <button class="masters__btn btn-gold">
+        Записаться
+      </button>
+      </div>
+    </section>
+
+    <section class="before">
+      <div class="container">
+        <h2 class="before__title title">
+          После посещения салона ваш питомец будет выглядеть безупречно, а вы наслаждаться результатом
+        </h2>
+        <p class="before__text">
+          Посмотрите наши работы и убедитесь в этом сами
+        </p>
+        <div class="before__slick">
+
+          <div class="before__inner">
+
+            <div class="before__inner-slick">
+              <div class="before__inner-item">
+                <img src="images/before/1.png" alt="dog">
+              </div>
+              <div class="before__inner-item">
+                <img src="images/before/3.png" alt="dog">
+              </div>
+            </div>
+            <img class="before__inner-img" src="images/before/4.png" alt="">
+
+            <div class="before__info">
+              <div class="before__info-top">
+                <p class="before__info-top-text">
+                  Питомец:
+                </p>
+                <p class="before__info-top-descr">
+                  СОБАКА
+                </p>
+                <p class="before__info-top-text">
+                  Порода:
+                </p>
+                <p class="before__info-top-descr">
+                  НАЗВАНИЕ
+                </p>
+              </div>
+              <div class="before__info-box">
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Услуга
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    Груминг + окантовка
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Продолжительность
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    50 минут
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Стоимость
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    12 500 ₸
+                  </p>
+                </div>
+                <div class="before__info-box-review">
+                  <p class="before__info-box-review-title">
+                    Отзыв клиента
+                  </p>
+                  <p class="before__info-box-review-text">
+                    Очень понравилась слаженная работа в вашем салоне. Наша бусинка в восторге, а мы от нее. Планируем
+                    стать постоянными клиентами!
+                  </p>
+                </div>
+                <div class="before__info-box-button">
+                  <button class="before__info-box-btn btn-gold">
+                    ОСТАВИТЬ ЗАЯВКУ
+                  </button>
+                  <p class="before__info-box-button-text">
+                    <img src="images/avatar/girl.png" alt="girl">
+                    Менеджер перезвнит вам через 3 минуты
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="before__inner">
+
+            <div class="before__inner-slick">
+              <div class="before__inner-item">
+                <img src="images/before/1.png" alt="dog">
+              </div>
+              <div class="before__inner-item">
+                <img src="images/before/3.png" alt="dog">
+              </div>
+            </div>
+            <img class="before__inner-img" src="images/before/4.png" alt="">
+
+            <div class="before__info">
+              <div class="before__info-top">
+                <p class="before__info-top-text">
+                  Питомец:
+                </p>
+                <p class="before__info-top-descr">
+                  СОБАКА
+                </p>
+                <p class="before__info-top-text">
+                  Порода:
+                </p>
+                <p class="before__info-top-descr">
+                  НАЗВАНИЕ
+                </p>
+              </div>
+              <div class="before__info-box">
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Услуга
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    Груминг + окантовка
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Продолжительность
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    50 минут
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Стоимость
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    12 500 ₸
+                  </p>
+                </div>
+                <div class="before__info-box-review">
+                  <p class="before__info-box-review-title">
+                    Отзыв клиента
+                  </p>
+                  <p class="before__info-box-review-text">
+                    Очень понравилась слаженная работа в вашем салоне. Наша бусинка в восторге, а мы от нее. Планируем
+                    стать постоянными клиентами!
+                  </p>
+                </div>
+                <div class="before__info-box-button">
+                  <button class="before__info-box-btn btn-gold">
+                    ОСТАВИТЬ ЗАЯВКУ
+                  </button>
+                  <p class="before__info-box-button-text">
+                    <img src="images/avatar/girl.png" alt="girl">
+                    Менеджер перезвнит вам через 3 минуты
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="before__inner">
+
+            <div class="before__inner-slick">
+              <div class="before__inner-item">
+                <img src="images/before/1.png" alt="dog">
+              </div>
+              <div class="before__inner-item">
+                <img src="images/before/3.png" alt="dog">
+              </div>
+            </div>
+            <img class="before__inner-img" src="images/before/4.png" alt="">
+
+            <div class="before__info">
+              <div class="before__info-top">
+                <p class="before__info-top-text">
+                  Питомец:
+                </p>
+                <p class="before__info-top-descr">
+                  СОБАКА
+                </p>
+                <p class="before__info-top-text">
+                  Порода:
+                </p>
+                <p class="before__info-top-descr">
+                  НАЗВАНИЕ
+                </p>
+              </div>
+              <div class="before__info-box">
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Услуга
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    Груминг + окантовка
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Продолжительность
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    50 минут
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Стоимость
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    12 500 ₸
+                  </p>
+                </div>
+                <div class="before__info-box-review">
+                  <p class="before__info-box-review-title">
+                    Отзыв клиента
+                  </p>
+                  <p class="before__info-box-review-text">
+                    Очень понравилась слаженная работа в вашем салоне. Наша бусинка в восторге, а мы от нее. Планируем
+                    стать постоянными клиентами!
+                  </p>
+                </div>
+                <div class="before__info-box-button">
+                  <button class="before__info-box-btn btn-gold">
+                    ОСТАВИТЬ ЗАЯВКУ
+                  </button>
+                  <p class="before__info-box-button-text">
+                    <img src="images/avatar/girl.png" alt="girl">
+                    Менеджер перезвнит вам через 3 минуты
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="before__inner">
+
+            <div class="before__inner-slick">
+              <div class="before__inner-item">
+                <img src="images/before/1.png" alt="dog">
+              </div>
+              <div class="before__inner-item">
+                <img src="images/before/3.png" alt="dog">
+              </div>
+            </div>
+            <img class="before__inner-img" src="images/before/4.png" alt="">
+
+            <div class="before__info">
+              <div class="before__info-top">
+                <p class="before__info-top-text">
+                  Питомец:
+                </p>
+                <p class="before__info-top-descr">
+                  СОБАКА
+                </p>
+                <p class="before__info-top-text">
+                  Порода:
+                </p>
+                <p class="before__info-top-descr">
+                  НАЗВАНИЕ
+                </p>
+              </div>
+              <div class="before__info-box">
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Услуга
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    Груминг + окантовка
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Продолжительность
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    50 минут
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Стоимость
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    12 500 ₸
+                  </p>
+                </div>
+                <div class="before__info-box-review">
+                  <p class="before__info-box-review-title">
+                    Отзыв клиента
+                  </p>
+                  <p class="before__info-box-review-text">
+                    Очень понравилась слаженная работа в вашем салоне. Наша бусинка в восторге, а мы от нее. Планируем
+                    стать постоянными клиентами!
+                  </p>
+                </div>
+                <div class="before__info-box-button">
+                  <button class="before__info-box-btn btn-gold">
+                    ОСТАВИТЬ ЗАЯВКУ
+                  </button>
+                  <p class="before__info-box-button-text">
+                    <img src="images/avatar/girl.png" alt="girl">
+                    Менеджер перезвнит вам через 3 минуты
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="before__inner">
+
+            <div class="before__inner-slick">
+              <div class="before__inner-item">
+                <img src="images/before/1.png" alt="dog">
+              </div>
+              <div class="before__inner-item">
+                <img src="images/before/3.png" alt="dog">
+              </div>
+            </div>
+            <img class="before__inner-img" src="images/before/4.png" alt="">
+
+            <div class="before__info">
+              <div class="before__info-top">
+                <p class="before__info-top-text">
+                  Питомец:
+                </p>
+                <p class="before__info-top-descr">
+                  СОБАКА
+                </p>
+                <p class="before__info-top-text">
+                  Порода:
+                </p>
+                <p class="before__info-top-descr">
+                  НАЗВАНИЕ
+                </p>
+              </div>
+              <div class="before__info-box">
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Услуга
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    Груминг + окантовка
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Продолжительность
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    50 минут
+                  </p>
+                </div>
+                <div class="before__info-box-content">
+                  <p class="before__info-box-content-text">
+                    Стоимость
+                  </p>
+                  <div class="before__info-box-dotted"></div>
+                  <p class="before__info-box-content-text">
+                    12 500 ₸
+                  </p>
+                </div>
+                <div class="before__info-box-review">
+                  <p class="before__info-box-review-title">
+                    Отзыв клиента
+                  </p>
+                  <p class="before__info-box-review-text">
+                    Очень понравилась слаженная работа в вашем салоне. Наша бусинка в восторге, а мы от нее. Планируем
+                    стать постоянными клиентами!
+                  </p>
+                </div>
+                <div class="before__info-box-button">
+                  <button class="before__info-box-btn btn-gold">
+                    ОСТАВИТЬ ЗАЯВКУ
+                  </button>
+                  <p class="before__info-box-button-text">
+                    <img src="images/avatar/girl.png" alt="girl">
+                    Менеджер перезвнит вам через 3 минуты
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="before__bottom">
+          <h3 class="before__bottom-title">
+            не нашли нужную услугу?
+          </h3>
+          <p class="before__bottom-text">
+            Запишитесь на бесплатную консультацию и наш менедже свяжется с вами в течение 3 минут
+          </p>
+          <form class="before__bottom-form">
+            <div class="before__bottom-input-name-box">
+              <input type="text" class="before__bottom-input-name" placeholder="Введите ваше имя">
+            </div>
+            <div class="before__bottom-input-tel-box">
+              <input type="tel" class="before__bottom-input-tel" placeholder="+7 (___) ___ ___ __">
+            </div>
+            <button class="before__bottom-btn btn-gold">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+          </form>
+          <label class="before__bottom-label">
+            <input class="discount__bottom-input-check" type="checkbox">
+            <span class="discount__bottom-checkbox"></span>
+            <span class="discount__bottom-input-text">
+              Я принимаю условия Соглашения
+            </span>
+          </label>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title title">
+          Нам доверяют самых красивых питомцев
+        </h2>
+        <p class="partners__text">
+          Независимый рейтинг честных отзывов от наших клиентов
+        </p>
+        <div class="partners__stars">
+          <img class="partners__star-1" src="images/partners/star-gold-1.svg" alt="star">
+          <img class="partners__star-2" src="images/partners/star-gold-2.svg" alt="star">
+          <img class="partners__star-3" src="images/partners/star-gold-3.svg" alt="star">
+          <img class="partners__star-4" src="images/partners/star-gold-4.svg" alt="star">
+          <img class="partners__star-5" src="images/partners/star.svg" alt="star">
+          <img class="partners__star-6" src="images/partners/star-2.svg" alt="star">
+          <img class="partners__star-7" src="images/partners/star-3.svg" alt="star">
+          <img class="partners__star-8" src="images/partners/star-4.svg" alt="star">
+        </div>
+        <div class="partners__inner">
+
+          <div class="partners__item">
+            <div class="partners__item-yandex">
+              <img src="images/partners/yandex.svg" alt="yandex">
+            </div>
+            <p class="partners__item-text">
+              оценка
+            </p>
+            <div class="partners__item-box">
+              <div class="partners__item-box-number">
+                4,9
+              </div>
+              <div class="partners__item-box-star">
+                <img src="images/partners/star-rateyo.svg" alt="">
+              </div>
+            </div>
+            <a href="#" class="partners__item-link">
+              посмотреть
+            </a>
+          </div>
+
+          <div class="partners__item">
+            <div class=" partners__item-google">
+              <img src="images/partners/google.svg" alt="google">
+            </div>
+            <p class="partners__item-text">
+              оценка
+            </p>
+            <div class="partners__item-box">
+              <div class="partners__item-box-number">
+                4,9
+              </div>
+              <div class="partners__item-box-star">
+                <img src="images/partners/star-rateyo.svg" alt="">
+              </div>
+            </div>
+            <a href="#" class="partners__item-link">
+              посмотреть
+            </a>
+          </div>
+
+          <div class="partners__item">
+            <div class="partners__item-2gis">
+              <img src="images/partners/2gis.svg" alt="2gis">
+            </div>
+            <p class="partners__item-text">
+              оценка
+            </p>
+            <div class="partners__item-box">
+              <div class="partners__item-box-number">
+                4,9
+              </div>
+              <div class="partners__item-box-star">
+                <img src="images/partners/star-rateyo.svg" alt="">
+              </div>
+            </div>
+            <a href="#" class="partners__item-link">
+              посмотреть
+            </a>
+          </div>
+
+        </div>
+        <button class="partners__btn btn-gold">
+          оставить заявку
+        </button>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="container">
+        <div class="review__top">
+          <div class="review__top-box">
+            <h2 class="review__top-title white-title">
+              за 6 лет работы мы подружились с 9826 собаками и 6342 кошками
+            </h2>
+            <p class="review__top-text">
+              Индивидуальный подход к каждому животному позволяет обрести дружественные и доверительные отношения
+            </p>
+          </div>
+          <div class="review__top-star">
+            <div class="review__top-star-box">
+              <div class="review__top-star-number">
+                4.9
+              </div>
+              <span class="review__top-star-text">
+                на основании
+                59 отзывов
+              </span>
+            </div>
+
+            <div class="review__top-star-percent-box">
+              <div class="review__top-star-percent">
+                <img src="images/review/star.svg" alt="star">
+                <span>x10</span>
+                <div class="review__top-star-line">
+                  <span class="review__top-star-line-percent" style="width: calc(100% - 75%);"></span>
+                  <span class="review__top-star-line-percent-number">75%</span>
+                </div>
+                <span class="review__top-star-line-number">18</span>
+              </div>
+
+              <div class="review__top-star-percent">
+                <img src="images/review/star.svg" alt="star">
+                <span>x5</span>
+                <div class="review__top-star-line">
+                  <span class="review__top-star-line-percent" style="width: calc(100% - 19%);"></span>
+                  <span class="review__top-star-line-percent-number">19%</span>
+                </div>
+                <span class="review__top-star-line-number">7</span>
+              </div>
+
+              <div class="review__top-star-percent">
+                <img src="images/review/star.svg" alt="star">
+                <span>x1</span>
+                <div class="review__top-star-line">
+                  <span class="review__top-star-line-percent" style="width: calc(100% - 6%);"></span>
+                  <span class="review__top-star-line-percent-number">6%</span>
+                </div>
+                <span class="review__top-star-line-number">1</span>
+              </div>
+
+              <div class="review__top-star-percent">
+                <img src="images/review/star.svg" alt="star">
+                <span>x0</span>
+                <div class="review__top-star-line">
+                  <span class="review__top-star-line-percent" style="width: calc(100% - 0%);"></span>
+                  <span class="review__top-star-line-percent-number">0%</span>
+                </div>
+                <span class="review__top-star-line-number">0</span>
+              </div>
+
+              <div class="review__top-star-percent">
+                <img src="images/review/star.svg" alt="star">
+                <span>x0</span>
+                <div class="review__top-star-line">
+                  <span class="review__top-star-line-percent" style="width: calc(100% - 0%);"></span>
+                  <span class="review__top-star-line-percent-number">0%</span>
+                </div>
+                <span class="review__top-star-line-number">0</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="review__slick">
+
+          <div class="review__inner">
+
+            <div class="review__inner-item review__inner-item--column">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      яна и бубби
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Отличный стильный салон, все оборудование новое. Грумер Ульяна очень красиво постригла нашего той
+                  пуделя.
+                  Приятный, внимательный администратор. Собака чувствовала себя после стрижки прекрасно, была веселая.
+                  Животных там любят и заботятся о них. Смело рекомендую.
+                </p>
+                <p class="review__inner-item-text">
+                  Раннее посещали другие салоны с большим стрессом, сюда будем ходить чаще. Спасибо ❤️
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box">
+                  <img class="review__inner-item-image" src="images/review/image/1.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/2.png" alt="img">
+                </div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    САЙТ
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__inner-item review__inner-item--column">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      Ольга и Стеша
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Побывали в новом открывшемся салоне рядом с домом, остались очень довольны! Очень стильный и
+                  просторный. Были на процедуре комплекс у мастера Ульяны, очень понравилось. Бережное и внимательное
+                  отношение, умеют расположить собак к себе и без стресса провести все необходимые процедуры.
+                  Администраторы все подробно расскажут и проконсультируют. Персонал на все 5+.
+                </p>
+                <p class="review__inner-item-text">
+                  Есть небольшая зона ожидания, угостят кофе/чаем и конфетками.
+                </p>
+                <p class="review__inner-item-text">
+                  Нам очень понравилось, придём ещё 😊
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                </div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    Яндекс
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__inner-item">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      анатолий и джек
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Отличный зоосалон, всегда ходим сюда. Персонал вежливый, гостеприимный. Собака после процедуры
+                  чувствовала себя отлично, советую.
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box"></div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    САЙТ
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__inner-item">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      Андрей и фру
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Мастер Елена отлично подстригла нашего Мальтипу, исправив неудачную стрижку грумера другого салона.
+                  Собаке тоже было находиться у Вас в гостях комфортно, что немаловажно.
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box"></div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    Яндекс
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="review__inner">
+
+            <div class="review__inner-item review__inner-item--column">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      яна и бубби
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Отличный стильный салон, все оборудование новое. Грумер Ульяна очень красиво постригла нашего той
+                  пуделя.
+                  Приятный, внимательный администратор. Собака чувствовала себя после стрижки прекрасно, была веселая.
+                  Животных там любят и заботятся о них. Смело рекомендую.
+                </p>
+                <p class="review__inner-item-text">
+                  Раннее посещали другие салоны с большим стрессом, сюда будем ходить чаще. Спасибо ❤️
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box">
+                  <img class="review__inner-item-image" src="images/review/image/1.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/2.png" alt="img">
+                </div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    САЙТ
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__inner-item review__inner-item--column">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      Ольга и Стеша
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Побывали в новом открывшемся салоне рядом с домом, остались очень довольны! Очень стильный и
+                  просторный. Были на процедуре комплекс у мастера Ульяны, очень понравилось. Бережное и внимательное
+                  отношение, умеют расположить собак к себе и без стресса провести все необходимые процедуры.
+                  Администраторы все подробно расскажут и проконсультируют. Персонал на все 5+.
+                </p>
+                <p class="review__inner-item-text">
+                  Есть небольшая зона ожидания, угостят кофе/чаем и конфетками.
+                </p>
+                <p class="review__inner-item-text">
+                  Нам очень понравилось, придём ещё 😊
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                  <img class="review__inner-item-image" src="images/review/image/3.png" alt="img">
+                </div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    Яндекс
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__inner-item">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      анатолий и джек
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Отличный зоосалон, всегда ходим сюда. Персонал вежливый, гостеприимный. Собака после процедуры
+                  чувствовала себя отлично, советую.
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box"></div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    САЙТ
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="review__inner-item">
+              <div class="review__inner-item-up">
+                <div class="review__inner-item-top">
+                  <img class="review__inner-item-top-image" src="images/review/avatar-1.png" alt="avatar">
+                  <div class="review__inner-item-top-name-box">
+                    <h6 class="review__inner-item-top-name">
+                      Лох по жизни
+                    </h6>
+                    <div class="review__inner-item-top-star">
+                    </div>
+                  </div>
+                  <div class="review__inner-item-top-date-box">
+                    <div class="review__inner-item-top-date">
+                      15.09.2023
+                    </div>
+                    <div class="review__inner-item-top-number-star">
+                      5 из 5
+                    </div>
+                  </div>
+                </div>
+                <p class="review__inner-item-text">
+                  Ну я и лошара
+                </p>
+              </div>
+              <div class="review__inner-item-down">
+                <div class="review__inner-item-image-box"></div>
+                <div class="review__inner-item-bottom">
+                  <p class="review__inner-item-bottom-text">
+                    Отзыв оставлен через:
+                  </p>
+                  <a href="#" class="review__inner-item-bottom-link">
+                    Яндекс
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="review__btn btn-gold">
+          оставить отзыв
+        </button>
+
+      </div>
+    </section>
+
+    <section class="grooming">
+      <div class="container">
+        <h2 class="grooming__title title">
+          мы - больше, чем груминг
+        </h2>
+        <p class="grooming__text">
+          Вы также можете посетить нашу ветеринарную клинику и приобрести все необходимое для ухода за любимым питомцем
+          прямо у нас в салоне
+        </p>
+        <div class="grooming__box">
+          <div class="grooming__box-item">
+            <h4 class="grooming__box-item-title">
+              Магазин зоотоваров
+            </h4>
+            <div class="grooming__box-item-img-1">
+              <img src="images/grooming/1.png" alt="img">
+            </div>
+            <p class="grooming__box-item-text">
+              Наш ассортимент – только лучшее, что мы сами готовы подарить своим питомцам. Ознакомьтесь с полным
+              ассортиментом товаров на
+              <a class="grooming__box-item-text-link" href="#">сайте</a>
+            </p>
+            <a class="grooming__box-item-link btn-gold" href="#">
+              подробнее
+            </a>
+          </div>
+          <div class="grooming__box-item">
+            <h4 class="grooming__box-item-title">
+              Ветеринарная клиника
+            </h4>
+            <div class="grooming__box-item-img-2">
+              <img src="images/grooming/2.png" alt="img">
+            </div>
+            <p class="grooming__box-item-text">
+              Профессиональные врачи ветклиники <a class="grooming__box-item-text-link" href="#">«Название с сылкой на
+                сайт» </a>окажут квалифицированную помощь вашему питомцу
+            </p>
+            <a class="grooming__box-item-link btn-gold" href="#">
+              подробнее
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialist">
+      <div class="container">
+        <div class="specialist__inner">
+          <div class="specialist__inner-box">
+            <h3 class="specialist__inner-box-title title">
+              Вопросы которые нам задают
+            </h3>
+            <p class="specialist__inner-box-text">
+              У вас остались вопросы? Получите
+              консультацию специалиста
+            </p>
+            <div class="specialist__inner-box-item">
+              <img class="specialist__inner-box-item-img" src="images/specialist.png" alt="specialist">
+            </div>
+          </div>
+          <div class="specialist__inner-content">
+            <div class="specialist__inner-content-item">
+              <button class="specialist__inner-content-item-btn">
+                В каком возрасте лучше всего начинать стричь питомца?
+              </button>
+              <div class="specialist__inner-content-item-text">
+                В любом возрасте не поздно начать приучать питомца к грумингу. Наши мастера отлично справляются со
+                знакомством питомца с грумингом. Но всё же рекомендуем с 2-3 месяцев, начинать ходить на гигиенические
+                процедуры,(мытьё, сушку феном, стрижку когтей), тем самым с самого малого приучать потихоньку к
+                комплексным процедурам.
+              </div>
+            </div>
+            <div class="specialist__inner-content-item">
+              <button class="specialist__inner-content-item-btn">
+                В каком возрасте лучше всего начинать стричь питомца?
+              </button>
+              <div class="specialist__inner-content-item-text">
+                В любом возрасте не поздно начать приучать питомца к грумингу. Наши мастера отлично справляются со
+                знакомством питомца с грумингом. Но всё же рекомендуем с 2-3 месяцев, начинать ходить на гигиенические
+                процедуры,(мытьё, сушку феном, стрижку когтей), тем самым с самого малого приучать потихоньку к
+                комплексным процедурам.
+              </div>
+            </div>
+            <div class="specialist__inner-content-item">
+              <button class="specialist__inner-content-item-btn">
+                Почему у собаки появляется перхоть на коже?
+              </button>
+              <div class="specialist__inner-content-item-text">
+                В любом возрасте не поздно начать приучать питомца к грумингу. Наши мастера отлично справляются со
+                знакомством питомца с грумингом. Но всё же рекомендуем с 2-3 месяцев, начинать ходить на гигиенические
+                процедуры,(мытьё, сушку феном, стрижку когтей), тем самым с самого малого приучать потихоньку к
+                комплексным процедурам.
+              </div>
+            </div>
+            <div class="specialist__inner-content-item">
+              <button class="specialist__inner-content-item-btn">
+                Используете ли вы наркоз для работы с животными?
+              </button>
+              <div class="specialist__inner-content-item-text">
+                В любом возрасте не поздно начать приучать питомца к грумингу. Наши мастера отлично справляются со
+                знакомством питомца с грумингом. Но всё же рекомендуем с 2-3 месяцев, начинать ходить на гигиенические
+                процедуры,(мытьё, сушку феном, стрижку когтей), тем самым с самого малого приучать потихоньку к
+                комплексным процедурам.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <h2 class="blog__title title">
+          название блока текст
+        </h2>
+        <div class="blog__inner">
+          <div class="blog__inner-box">
+            <p class="blog__inner-box-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
+              sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes,
+            </p>
+            <p class="blog__inner-box-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
+            </p>
+            <h5 class="blog__inner-box-title">
+              Подзаголовок для второго абзаца текста
+            </h5>
+            <p class="blog__inner-box-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
+              sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes,
+            </p>
+            <p class="blog__inner-box-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
+            </p>
+            <h5 class="blog__inner-box-title">
+              Подзаголовок для второго абзаца текста
+            </h5>
+            <p class="blog__inner-box-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
+              sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes,
+            </p>
+            <p class="blog__inner-box-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
+            </p>
+          </div>
+          <div class="blog__inner-form">
+            <span class="blog__inner-form-text">
+              Запишитесь
+            </span>
+            <h4 class="blog__inner-form-title">
+              На первую<br>
+              бесплатную консультацию
+            </h4>
+            <form class="before__bottom-form">
+              <div class="before__bottom-input-name-box">
+                <input type="text" class="before__bottom-input-name" placeholder="Введите ваше имя">
+              </div>
+              <div class="before__bottom-input-tel-box">
+                <input type="tel" class="before__bottom-input-tel" placeholder="+7 (___) ___ ___ __">
+              </div>
+              <button class="before__bottom-btn btn-gold">
+                ОСТАВИТЬ ЗАЯВКУ
+              </button>
+            </form>
+            <label class="before__bottom-label">
+              <input class="discount__bottom-input-check" type="checkbox">
+              <span class="discount__bottom-checkbox"></span>
+              <span class="discount__bottom-input-text">
+                Согласие на обработку персональных данных
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join">
+      <div class="container">
+        <img class="join__img-2" src="images/join/2.svg" alt="img">
+        <img class="join__img-3" src="images/join/3.svg" alt="img">
+        <img class="join__img-4" src="images/join/4.svg" alt="img">
+        <img class="join__img-5" src="images/join/5.png" alt="img">
+        <img class="join__img-6" src="images/join/6.png" alt="img">
+        <img class="join__img-7" src="images/join/7.png" alt="img">
+        <h2 class="join__title white-title">
+          подписывайтесь на наш instagram
+        </h2>
+        <p class="join__text">
+          В наших соц сетях можно посмотреть как грумеры преобразили наших клиентов, результаты
+          работы - «до» и «после», а также узнать о тонкостях груминга и об уходе за домашними животными.
+        </p>
+        <div class="join__box">
+          <img src="images/join/1.png" alt="instagram">
+          <a href="#" class="join__box-text">
+            @nazvanieprofilainsta
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="line">
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Бесплатная консультация
+      </p>
+      <img src="images/icons/arrow-left-green-white.svg" alt="arrow">
+      <p class="line__text">
+        Proхвост
+      </p>
+    </section> -->
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__inner-map">
+            <img src="images/map.jpg" alt="map">
+          </div>
+          <div class="contacts__inner-box">
+            <div>
+              <h2 class="contacts__inner-box-title title">
+                Контакты груминг-салона “Proхвост”
+              </h2>
+              <div>
+                <p class="contacts__inner-box-address">
+                  г. Алматы, ул. Предгорная 33
+                </p>
+                <p class="contacts__inner-box-time">
+                  С 8:00 до 20:00 без выходных
+                </p>
+                <p class="contacts__inner-box-tel">
+                  +7 (222) 222-22-22
+                </p>
+              </div>
+
+            </div>
+            <button class="contacts__inner-box-btn btn-gold">
+              оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles">
+      <div class="container">
+        <h2 class="articles__title title">
+          Пишем о том, как правильно ухаживать
+          за домашними питомцами
+        </h2>
+        <div class="articles__inner">
+          <div class="articles__inner-item">
+            <img src="images/articles/1.jpg" alt="img">
+            <div class="articles__inner-item-box">
+              <div class="articles__inner-item-tags">
+                <span>27 июня</span>
+                <span class="articles__inner-item-tags-time">
+                  3 минуты чтения
+                </span>
+                <span>#Воспитание</span>
+              </div>
+              <h4 class="articles__inner-item-title">
+                Обучение щенков
+              </h4>
+              <p class="articles__inner-item-text">
+                «Сидеть!», «Стоять!», «Рядом!», «Ко мне!» — первые базовые команды, которые усвоит щенок. Чтобы обучение
+                приносило удовольствие и вам, и питомцу, соблюдайте несколько правил.
+              </p>
+            </div>
+            <a class="articles__inner-item-link" href="#">
+              читать подробнее
+            </a>
+          </div>
+          <div class="articles__inner-item">
+            <img src="images/articles/2.jpg" alt="img">
+            <div class="articles__inner-item-box">
+              <div class="articles__inner-item-tags">
+                <span>27 июня</span>
+                <span class="articles__inner-item-tags-time">
+                  3 минуты чтения
+                </span>
+                <span>#Воспитание</span>
+              </div>
+              <h4 class="articles__inner-item-title">
+                Авиаперелеты
+              </h4>
+              <p class="articles__inner-item-text">
+                Авиаперелет — самый быстрый способ добраться до места назначения. Но авиакомпании не гарантируют полной
+                безопасности нашим питомцам...
+              </p>
+            </div>
+            <a class="articles__inner-item-link" href="#">
+              читать подробнее
+            </a>
+          </div>
+          <div class="articles__inner-item">
+            <img src="images/articles/3.jpg" alt="img">
+            <div class="articles__inner-item-box">
+              <div class="articles__inner-item-tags">
+                <span>27 июня</span>
+                <span class="articles__inner-item-tags-time">
+                  3 минуты чтения
+                </span>
+                <span>#Воспитание</span>
+              </div>
+              <h4 class="articles__inner-item-title">
+                Можно ли бороться с линькой?
+              </h4>
+              <p class="articles__inner-item-text">
+                Вылавливая шерсть из супа и ежедневно очищая от нее одежду, владельцы кошек и собак часто задают себе
+                вопрос: можно ли бороться с линькой? Хорошие новости: несмотря на то, что совсем...
+              </p>
+            </div>
+            <a class="articles__inner-item-link" href="#">
+              читать подробнее
+            </a>
+          </div>
+        </div>
+        <a class="articles__btn btn-gold" href="#">
+          Читать все статьи
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-box">
+          <div class="footer__inner-box-left">
+            <a class="menu__logo">
+              Proхвост
+            </a>
+            <span class="footer__inner-box-span">
+              Груминг для ваших<br>
+              домашних животных
+            </span>
+            <button class="footer__btn btn-gold">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+            <div class="footer__inner-box-links">
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/vk.svg" alt="">
+              </a>
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/facebook.svg" alt="">
+              </a>
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/instagram.svg" alt="instagram">
+              </a>
+            </div>
+            <p class="footer__inner-box-text">
+              Согласие на обработку данных
+            </p>
+            <p class="footer__inner-box-text">
+              Политика конфиденциальности
+            </p>
+          </div>
+          <div class="footer__inner-content-left">
+            <h4 class="footer__inner-content-left-title">
+              Услуги
+            </h4>
+            <ul class="footer__inner-content-list">
+              <li class="footer__inner-content-item">
+                Стрижка собак
+              </li>
+              <li class="footer__inner-content-item">
+                Комплексный уход
+              </li>
+              <li class="footer__inner-content-item">
+                Приучение к грумингу
+              </li>
+              <li class="footer__inner-content-item">
+                Аппаратный лапакюр
+              </li>
+              <li class="footer__inner-content-item">
+                Мытье
+              </li>
+              <li class="footer__inner-content-item">
+                SPA
+              </li>
+              <li class="footer__inner-content-item">
+                Чистка зубов
+              </li>
+              <li class="footer__inner-content-item">
+                Покраска
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__inner-content">
+          <div class="footer__inner-content-right">
+            <div class="footer__inner-content-right-box">
+              <div class="footer__inner-content-links">
+                <a class="footer__inner-content-link" href="#">
+                  собаки
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  Кошки
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  мастера
+                </a>
+              </div>
+              <div class="footer__inner-content-links">
+                <a class="footer__inner-content-link" href="#">
+                  салон
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  блог
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  о нас
+                </a>
+              </div>
+            </div>
+            <p class="footer__inner-content-tel">
+              8 (800) 000-00-00
+            </p>
+            <p class="footer__inner-content-email">
+              email@email.com
+            </p>
+            <p class="footer__inner-content-address">
+              г. Алматы, ул. Предгорная, 33
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
