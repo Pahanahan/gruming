@@ -1,33 +1,46 @@
 $(function () {
 
-  $('.questions__choice-btn').on('click', function () {
+  $('.questions__choice-btn').on('click', function (e) {
+    e.preventDefault();
+
+    // const chanchedAnimal = document.changeAnimal;
+    // function change_Status() {
+    //   chanchedAnimal.buttonChengedAnimal.disabled = (chanchedAnimal.animal.checked) ? false : true;
+    // }
+    // change_Status();
+
+
     $('.questions__choice').addClass('questions__choice--disactive');
     $('.questions__choice--2').removeClass('questions__choice--disactive');
     $('.questions__choice--2').addClass('questions__choice--2--active');
   });
 
-  $('.questions__choice-btn--2').on('click', function () {
+  $('.questions__choice-btn--2').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--2').addClass('questions__choice--disactive');
     $('.questions__choice--2').removeClass('questions__choice--2--active');
     $('.questions__choice--3').addClass('questions__choice--3--active');
     $('.questions__choice--3').removeClass('questions__choice--disactive');
   });
 
-  $('.questions__choice-btn--3').on('click', function () {
+  $('.questions__choice-btn--3').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--3').addClass('questions__choice--disactive');
     $('.questions__choice--3').removeClass('questions__choice--3--active');
     $('.questions__choice--4').addClass('questions__choice--4--active');
     $('.questions__choice--4').removeClass('questions__choice--disactive');
   });
 
-  $('.questions__choice-btn--4').on('click', function () {
+  $('.questions__choice-btn--4').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--4').addClass('questions__choice--disactive');
     $('.questions__choice--4').removeClass('questions__choice--4--active');
     $('.questions__choice--5').addClass('questions__choice--5--active');
     $('.questions__choice--5').removeClass('questions__choice--disactive');
   });
 
-  $('.questions__choice-btn--5').on('click', function () {
+  $('.questions__choice-btn--5').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--5').addClass('questions__choice--disactive');
     $('.questions__choice--5').removeClass('questions__choice--5--active');
     $('.questions__choice--6').addClass('questions__choice--6--active');
@@ -35,7 +48,8 @@ $(function () {
     $('.questions__test').addClass('questions__test--disactive');
   });
 
-  $('.questions__choice-btn--6').on('click', function () {
+  $('.questions__choice-btn--6').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--6').addClass('questions__choice--disactive');
     $('.questions__choice--6').removeClass('questions__choice--6--active');
     $('.questions__choice').addClass('questions__choice--active');
@@ -44,28 +58,32 @@ $(function () {
     $('.find__inner').addClass('find__inner--mb150');
   });
 
-  $('.questions__btn-back').on('click', function () {
+  $('.questions__btn-back').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--2').addClass('questions__choice--disactive');
     $('.questions__choice--2').removeClass('questions__choice--2--active');
     $('.questions__choice').addClass('questions__choice--active');
     $('.questions__choice').removeClass('questions__choice--disactive');
   });
 
-  $('.questions__btn-back-2').on('click', function () {
+  $('.questions__btn-back-2').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--3').addClass('questions__choice--disactive');
     $('.questions__choice--3').removeClass('questions__choice--3--active');
     $('.questions__choice--2').addClass('questions__choice--active');
     $('.questions__choice--2').removeClass('questions__choice--disactive');
   });
 
-  $('.questions__btn-back-3').on('click', function () {
+  $('.questions__btn-back-3').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--4').addClass('questions__choice--disactive');
     $('.questions__choice--4').removeClass('questions__choice--4--active');
     $('.questions__choice--3').addClass('questions__choice--active');
     $('.questions__choice--3').removeClass('questions__choice--disactive');
   });
 
-  $('.questions__btn-back-4').on('click', function () {
+  $('.questions__btn-back-4').on('click', function (e) {
+    e.preventDefault();
     $('.questions__choice--5').addClass('questions__choice--disactive');
     $('.questions__choice--5').removeClass('questions__choice--5--active');
     $('.questions__choice--4').addClass('questions__choice--active');
@@ -183,6 +201,7 @@ $(function () {
     $('.thanks').removeClass('thanks--disactive');
     $('.application').addClass('application--disactive');
     $('.btn-applic').addClass('btn-applic--disactive');
+    $('.btn-applic').removeClass('btn-gold');
     $('.btn-applic--disactive').attr("disabled", "disabled");
   });
   $('.thanks__btn').on('click', function (e) {
@@ -194,14 +213,52 @@ $(function () {
     $('.thanks').addClass('thanks--disactive');
   });
 
+
+  // $('.review__btn').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.review-popap').removeClass('review-popap--disactive');
+  // });
+  // $('.review-popap__btn-close').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.review-popap').addClass('review-popap--disactive');
+  // });
+  // $('.btn-application').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.thanks').removeClass('thanks--disactive');
+  //   $('.application').addClass('application--disactive');
+  //   $('.btn-applic').addClass('btn-applic--disactive');
+  //   $('.btn-applic').removeClass('btn-gold');
+  //   $('.btn-applic--disactive').attr("disabled", "disabled");
+  // });
+  // $('.thanks__btn').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.thanks').addClass('thanks--disactive');
+  // });
+  // $('.thanks__btn-close').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.thanks').addClass('thanks--disactive');
+  // });
+
+  $('.review-popap__star').rateYo({
+    rating: 4,
+    spacing: "5px",
+    starWidth: '11px',
+    fullStar: true,
+    normalFill: "#FFD232",
+    ratedFill: "#FFD232",
+    starSvg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns: xlink = "http://www.w3.org/1999/xlink" width="18px" height="16px" viewBox="0 0 18 16" version="1.1"> <g id="surface1"> <path d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875 8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688 0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L 3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156 4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562 16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938 14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219 6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L 11.914062 4.695312 Z M 9.902344 0.5625 "/></g></svg>'
+  });
+
 });
 
 
 const reg = document.registration;
-  function change_Status () {
-  reg.start.disabled = (reg.name.value && reg.tel.value) ? false : true;
-  }
-  change_Status();
+function change_Status() {
+  reg.start.disabled = (reg.name.value && reg.tel.value && reg.check.checked) ? false : true;
+}
+change_Status();
+
+
 
 
 const accordeon = document.querySelector('.specialist__inner-content');

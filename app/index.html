@@ -31,20 +31,21 @@
             onchange="change_Status()" name="name">
         </div>
         <div class="before__bottom-input-tel-box">
-          <input class="before__bottom-input-tel" type="tel" placeholder="+7 (___) ___ ___ __" onkeyup="change_Status()"
-            onchange="change_Status()" name="tel">
+          <input class="before__bottom-input-tel" id="phone" type="number" placeholder="+7 (___) ___ ___ __"
+            onkeyup="change_Status()" onchange="change_Status()" name="tel">
         </div>
-        <button class="before__bottom-btn btn-gold btn-application" name="start">
+        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start">
           ОСТАВИТЬ ЗАЯВКУ
         </button>
+        <label class="before__bottom-label">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status()"
+            onchange="change_Status()" name="check">
+          <span class="discount__bottom-checkbox"></span>
+          <span class="discount__bottom-input-text">
+            Согласие на обработку персональных данных
+          </span>
+        </label>
       </form>
-      <label class="before__bottom-label">
-        <input class="discount__bottom-input-check" type="checkbox">
-        <span class="discount__bottom-checkbox"></span>
-        <span class="discount__bottom-input-text">
-          Согласие на обработку персональных данных
-        </span>
-      </label>
     </div>
   </div>
 
@@ -66,6 +67,45 @@
           понятно, спасибо
         </button>
       </div>
+    </div>
+  </div>
+
+  <div class="review-popap review-popap--disactive">
+    <button class="review-popap__btn-close">
+      <img src="images/icons/close-violet.svg" alt="close">
+    </button>
+    <div class="review-popap__inner">
+      <h3 class="review-popap__title title">
+        МОЙ ОТЗЫВ
+      </h3>
+      <form class="before__bottom-form" name="review" method="post">
+        <div class="before__bottom-input-name-box">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status()"
+            onchange="change_Status()" name="name">
+        </div>
+        <div class="before__bottom-input-tel-box">
+          <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
+            onkeyup="change_Status()" onchange="change_Status()" name="tel">
+        </div>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" name="textarea"></textarea>
+        <div class="review-popap__box">
+          <p class="review-popap__text">
+            Оцените сервис и оказанную услугу
+          </p>
+          <div class="review-popap__star"></div>
+        </div>
+        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start">
+          ОСТАВИТЬ ЗАЯВКУ
+        </button>
+        <label class="before__bottom-label">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status()"
+            onchange="change_Status()" name="check">
+          <span class="discount__bottom-checkbox"></span>
+          <span class="discount__bottom-input-text">
+            Согласие на обработку персональных данных
+          </span>
+        </label>
+      </form>
     </div>
   </div>
 
@@ -310,7 +350,7 @@
             <p class="find__text">
               Оставьте заявку и мы найдем для вас решение!
             </p>
-            <form class="find__form" action="#">
+            <form class="find__form">
               <div class="find__input-name">
                 <input class="find__input" type="text" placeholder="Ваше имя">
               </div>
@@ -319,7 +359,7 @@
               </div>
             </form>
             <div class="find__box">
-              <button class="find__box-btn btn-gold">
+              <button class="find__box-btn btn-gold btn-applic">
                 Записаться
               </button>
               <p class="find__box-text">
@@ -389,32 +429,37 @@
             <h3 class="questions__choice-title">
               1.У вас кошка или собака?
             </h3>
-            <div class="questions__choice-box">
-              <div class="questions__choice-item">
-                <img class="questions__choice-item-img" src="images/animal/cat.png" alt="cat">
-                <label class="questions__choice-item-label">
-                  <input class="questions__choice-item-input" type="radio" name="animal">
-                  <span class="questions__choice-item-checkbox"></span>
-                </label>
+            <form class="questions__choice-form" method="post" name="changeAnimal">
+              <div class="questions__choice-box">
+                <div class="questions__choice-item">
+                  <img class="questions__choice-item-img" src="images/animal/cat.png" alt="cat">
+                  <label class="questions__choice-item-label">
+                    <input class="questions__choice-item-input" id="animal1" type="radio" name="animal"
+                      onkeyup="change_Status()" onchange="change_Status()">
+                    <span class="questions__choice-item-checkbox"></span>
+                  </label>
+                </div>
+                <div class="questions__choice-item">
+                  <img class="questions__choice-item-img" src="images/animal/dog.png" alt="dog">
+                  <label class="questions__choice-item-label">
+                    <input class="questions__choice-item-input" id="animal2" type="radio" name="animal"
+                      onkeyup="change_Status()" onchange="change_Status()">
+                    <span class="questions__choice-item-checkbox"></span>
+                  </label>
+                </div>
+                <div class="questions__choice-item">
+                  <img class="questions__choice-item-img" src="images/animal/some-animal.png" alt="some-animal">
+                  <label class="questions__choice-item-label">
+                    <input class="questions__choice-item-input" id="animal3" type="radio" name="animal"
+                      onkeyup="change_Status()" onchange="change_Status()">
+                    <span class="questions__choice-item-checkbox"></span>
+                  </label>
+                </div>
               </div>
-              <div class="questions__choice-item">
-                <img class="questions__choice-item-img" src="images/animal/dog.png" alt="dog">
-                <label class="questions__choice-item-label">
-                  <input class="questions__choice-item-input" type="radio" name="animal">
-                  <span class="questions__choice-item-checkbox"></span>
-                </label>
-              </div>
-              <div class="questions__choice-item">
-                <img class="questions__choice-item-img" src="images/animal/some-animal.png" alt="some-animal">
-                <label class="questions__choice-item-label">
-                  <input class="questions__choice-item-input" type="radio" name="animal">
-                  <span class="questions__choice-item-checkbox"></span>
-                </label>
-              </div>
-            </div>
-            <button class="questions__choice-btn btn-gold">
-              следующий шаг
-            </button>
+              <button class="questions__choice-btn btn-gold" name="buttonChengedAnimal">
+                следующий шаг
+              </button>
+            </form>
           </div>
 
           <div class="questions__choice--2 questions__choice--disactive">
@@ -1272,7 +1317,7 @@
           </div>
 
         </div>
-        <button class="spa__btn btn-gold">
+        <button class="spa__btn btn-gold btn-applic">
           Записаться
         </button>
       </div>
@@ -1460,7 +1505,7 @@
           </div>
 
         </div>
-        <button class="spa__btn btn-gold">
+        <button class="spa__btn btn-gold btn-applic">
           Записаться
         </button>
       </div>
@@ -1516,7 +1561,7 @@
                 45 000 ₸
               </span>
             </div>
-            <button class="discount__btn btn-gold">
+            <button class="discount__btn btn-gold btn-applic">
               Записаться
             </button>
           </div>
@@ -1561,7 +1606,7 @@
                 50 000 ₸
               </span>
             </div>
-            <button class="discount__btn btn-gold">
+            <button class="discount__btn btn-gold btn-applic">
               Записаться
             </button>
           </div>
@@ -1585,11 +1630,11 @@
               Оставьте заявку и наш менеджер свяжется с вами в течение 3 минут
             </p>
           </div>
-          <div class="discount__bottom-form">
+          <form class="discount__bottom-form">
             <div class="discount__bottom-input-tel-box">
               <input class="discount__bottom-input-tel" type="tel" placeholder="+7 (___) ___ ___ __">
             </div>
-            <button class="discount__bottom-btn btn-gold">
+            <button class="discount__bottom-btn btn-gold btn-applic">
               ОСТАВИТЬ ЗАЯВКУ
             </button>
             <label class="discount__bottom-label">
@@ -1599,7 +1644,7 @@
                 Я принимаю условия Соглашения
               </span>
             </label>
-          </div>
+          </form>
           <img class="discount__bottom-img" src="images/girl-bg.png" alt="girl">
         </div>
       </div>
@@ -2025,7 +2070,7 @@
 
       </div>
 
-      <button class="masters__btn btn-gold">
+      <button class="masters__btn btn-gold btn-applic">
         Записаться
       </button>
       </div>
@@ -2106,7 +2151,7 @@
                   </p>
                 </div>
                 <div class="before__info-box-button">
-                  <button class="before__info-box-btn btn-gold">
+                  <button class="before__info-box-btn btn-gold btn-applic">
                     ОСТАВИТЬ ЗАЯВКУ
                   </button>
                   <p class="before__info-box-button-text">
@@ -2184,7 +2229,7 @@
                   </p>
                 </div>
                 <div class="before__info-box-button">
-                  <button class="before__info-box-btn btn-gold">
+                  <button class="before__info-box-btn btn-gold btn-applic">
                     ОСТАВИТЬ ЗАЯВКУ
                   </button>
                   <p class="before__info-box-button-text">
@@ -2261,7 +2306,7 @@
                   </p>
                 </div>
                 <div class="before__info-box-button">
-                  <button class="before__info-box-btn btn-gold">
+                  <button class="before__info-box-btn btn-gold btn-applic">
                     ОСТАВИТЬ ЗАЯВКУ
                   </button>
                   <p class="before__info-box-button-text">
@@ -2338,7 +2383,7 @@
                   </p>
                 </div>
                 <div class="before__info-box-button">
-                  <button class="before__info-box-btn btn-gold">
+                  <button class="before__info-box-btn btn-gold btn-applic">
                     ОСТАВИТЬ ЗАЯВКУ
                   </button>
                   <p class="before__info-box-button-text">
@@ -2415,7 +2460,7 @@
                   </p>
                 </div>
                 <div class="before__info-box-button">
-                  <button class="before__info-box-btn btn-gold">
+                  <button class="before__info-box-btn btn-gold btn-applic">
                     ОСТАВИТЬ ЗАЯВКУ
                   </button>
                   <p class="before__info-box-button-text">
@@ -2444,7 +2489,7 @@
             <div class="before__bottom-input-tel-box">
               <input type="tel" class="before__bottom-input-tel" placeholder="+7 (___) ___ ___ __">
             </div>
-            <button class="before__bottom-btn btn-gold">
+            <button class="before__bottom-btn btn-gold btn-applic">
               ОСТАВИТЬ ЗАЯВКУ
             </button>
           </form>
@@ -2541,7 +2586,7 @@
           </div>
 
         </div>
-        <button class="partners__btn btn-gold">
+        <button class="partners__btn btn-gold btn-applic">
           оставить заявку
         </button>
       </div>
@@ -3157,7 +3202,7 @@
               <div class="before__bottom-input-tel-box">
                 <input type="tel" class="before__bottom-input-tel" placeholder="+7 (___) ___ ___ __">
               </div>
-              <button class="before__bottom-btn btn-gold">
+              <button class="before__bottom-btn btn-gold btn-applic">
                 ОСТАВИТЬ ЗАЯВКУ
               </button>
             </form>
@@ -3296,7 +3341,7 @@
               </div>
 
             </div>
-            <button class="contacts__inner-box-btn btn-gold">
+            <button class="contacts__inner-box-btn btn-gold btn-applic">
               оставить заявку
             </button>
           </div>
@@ -3398,7 +3443,7 @@
               Груминг для ваших<br>
               домашних животных
             </span>
-            <button class="footer__btn btn-gold">
+            <button class="footer__btn btn-gold btn-applic">
               ОСТАВИТЬ ЗАЯВКУ
             </button>
             <div class="footer__inner-box-links">

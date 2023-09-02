@@ -68,6 +68,7 @@
 
   .before__bottom-label {
     text-align: start;
+    align-self: flex-start;
   }
 
   .discount__bottom-checkbox {
@@ -123,6 +124,94 @@
   &__btn {
     width: 279px;
     height: 67.548px;
+  }
+}
+
+.review-popap {
+  padding: 60px 73px;
+    width: 618px;
+    border-radius: 9px;
+    border: 2px solid #F2F2F2;
+    background-color: $fff;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(10%);
+    z-index: 10;
+    position: fixed;
+
+  &--disactive {
+    display: none;
+  }
+
+  &__btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    width: 291px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  &__box {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 120%;
+    color: $text;
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 370px;
+    margin-right: 10px;
+  }
+
+  .before__bottom-form {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .before__bottom-input-name,
+  .before__bottom-input-tel,
+  .before__bottom-textarea {
+    width: 472px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 0px 0px 0px rgba(188, 188, 188, 0.10) inset, 0px 2px 5px 0px rgba(188, 188, 188, 0.10) inset, 0px 10px 10px 0px rgba(188, 188, 188, 0.09) inset, 0px 22px 13px 0px rgba(188, 188, 188, 0.05) inset, 0px 39px 16px 0px rgba(188, 188, 188, 0.01) inset;
+  }
+
+  .before__bottom-textarea {
+    height: 255px;
+    border-radius: 7px;
+    border: none;
+    padding: 25px;
+    resize: none;
+  }
+
+  .before__bottom-btn {
+    width: 472px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .before__bottom-label {
+    text-align: start;
+    align-self: flex-start;
+  }
+
+  .discount__bottom-checkbox {
+    border: 1px solid #000;
+  }
+
+  .discount__bottom-input-text {
+    color: $text;
   }
 }
 
@@ -265,6 +354,7 @@
     position: absolute;
     top: 254px;
     transform: translateX(251%);
+    cursor: pointer;
 
     &:hover {
       background-image: url('../images/icons/arrow-green-hover.svg');
@@ -571,7 +661,7 @@
     color: $fff;
     font-size: 14px;
     line-height: 120%;
-    width: 283px;
+    width: 227px;
     margin-top: 10px;
 
     a {
@@ -1397,6 +1487,7 @@
     position: absolute;
     content: '';
     bottom: -16px;
+   cursor: pointer; 
   }
 
   .slick-prev {
@@ -2134,6 +2225,7 @@
     position: absolute;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 
   .slick-prev {
