@@ -78,34 +78,54 @@
       <h3 class="review-popap__title title">
         МОЙ ОТЗЫВ
       </h3>
-      <form class="before__bottom-form" name="review" method="post">
+      <form class="before__bottom-form" name="formReview" method="post">
         <div class="before__bottom-input-name-box">
-          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status()"
-            onchange="change_Status()" name="name">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status_review()"
+            onchange="change_Status_review()" name="nameReview">
         </div>
         <div class="before__bottom-input-tel-box">
           <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
-            onkeyup="change_Status()" onchange="change_Status()" name="tel">
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameAnimalReview">
         </div>
-        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" name="textarea"></textarea>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()" onchange="change_Status_review()" name="textareaReview"></textarea>
         <div class="review-popap__box">
           <p class="review-popap__text">
             Оцените сервис и оказанную услугу
           </p>
           <div class="review-popap__star"></div>
         </div>
-        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start">
+        <button class="before__bottom-btn btn-gold btn-review" type="submit" name="startReview">
           ОСТАВИТЬ ЗАЯВКУ
         </button>
         <label class="before__bottom-label">
-          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status()"
-            onchange="change_Status()" name="check">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status_review()"
+            onchange="change_Status_review()" name="checkReview">
           <span class="discount__bottom-checkbox"></span>
           <span class="discount__bottom-input-text">
             Согласие на обработку персональных данных
           </span>
         </label>
       </form>
+    </div>
+  </div>
+
+  <div class="thanks-review thanks-review--disactive">
+    <div class="container">
+      <div class="thanks__inner">
+        <button class="thanks__btn-close">
+          <img src="images/icons/close-violet.svg" alt="close">
+        </button>
+        <h3 class="thanks__title title">
+          спасибо!
+        </h3>
+        <p class="thanks__text">
+          Мы ценим вашу обратную связь! Она помогает делать наш сервис еще лучше.
+        </p>
+        <img class="thanks__img" src="images/girl-thanks-review.png" alt="thanks">
+        <button class="thanks__btn btn-gold">
+          понятно, спасибо
+        </button>
+      </div>
     </div>
   </div>
 
@@ -435,7 +455,7 @@
                   <img class="questions__choice-item-img" src="images/animal/cat.png" alt="cat">
                   <label class="questions__choice-item-label">
                     <input class="questions__choice-item-input" id="animal1" type="radio" name="animal"
-                      onkeyup="change_Status()" onchange="change_Status()">
+                      onkeyup="change_Status_next()" onchange="change_Status_next()">
                     <span class="questions__choice-item-checkbox"></span>
                   </label>
                 </div>
@@ -443,7 +463,7 @@
                   <img class="questions__choice-item-img" src="images/animal/dog.png" alt="dog">
                   <label class="questions__choice-item-label">
                     <input class="questions__choice-item-input" id="animal2" type="radio" name="animal"
-                      onkeyup="change_Status()" onchange="change_Status()">
+                      onkeyup="change_Status_next()" onchange="change_Status_next()">
                     <span class="questions__choice-item-checkbox"></span>
                   </label>
                 </div>
@@ -451,7 +471,7 @@
                   <img class="questions__choice-item-img" src="images/animal/some-animal.png" alt="some-animal">
                   <label class="questions__choice-item-label">
                     <input class="questions__choice-item-input" id="animal3" type="radio" name="animal"
-                      onkeyup="change_Status()" onchange="change_Status()">
+                      onkeyup="change_Status_next()" onchange="change_Status_next()">
                     <span class="questions__choice-item-checkbox"></span>
                   </label>
                 </div>

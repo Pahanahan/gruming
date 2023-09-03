@@ -76,3 +76,23 @@ body {
   }
 }
 
+.review__btn--disactive {
+  background: linear-gradient(208deg, #D8D8D8 0%, #EFEFEF 100%) !important;
+  cursor: default !important;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: $text;
+  text-transform: uppercase;
+  @extend %cera-700;
+  border-radius: 20px;
+
+  &:hover {
+    background: linear-gradient(208deg, #D8D8D8 0%, #EFEFEF 100%) !important;
+  }
+
+  &:active {
+    background: linear-gradient(208deg, #D8D8D8 0%, #EFEFEF 100%) !important;
+  }
+}
+
