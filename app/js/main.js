@@ -290,6 +290,16 @@ $(function () {
     $('.price-questions__item-4').removeClass('price-questions__item--disactive');
     $('.price-questions__item-5').addClass('price-questions__item--disactive');
   });
+
+
+
+  $('.promotion__inner').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+  });
+
 });
 
 
