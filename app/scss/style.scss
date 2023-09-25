@@ -1161,7 +1161,7 @@
 
     &::placeholder {
       color: #828282;
-      @extend %cera-400;
+      @extend %roboto-400;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -1403,7 +1403,7 @@
     background-color: transparent;
     border: none;
     color: $fff;
-    @extend %cera-400;
+    @extend %roboto-400;
     padding: 7px 20px;
     cursor: pointer;
   }
@@ -1613,7 +1613,7 @@
 
   &__top-text {
     color: $fff;
-    @extend %cera-400;
+    @extend %roboto-400;
     font-size: 22px;
     line-height: 110%;
     max-width: 650px;
@@ -2163,7 +2163,7 @@
   }
 
   &__item-name {
-    @extend %cera-400;
+    @extend %roboto-400;
     color: $text;
     text-align: center;
     font-size: 22px;
@@ -2204,7 +2204,7 @@
   &__item-specialist {
     text-align: center;
     display: block;
-    @extend %cera-400;
+    @extend %roboto-400;
     font-size: 16px;
     line-height: normal;
   }
@@ -2584,7 +2584,7 @@
 
   &__bottom-text {
     text-align: center;
-    @extend %cera-400;
+    @extend %roboto-400;
     font-size: 22px;
     line-height: 110%;
     color: $fff;
@@ -2622,7 +2622,7 @@
 
     &::placeholder {
       color: #828282;
-      @extend %cera-400;
+      @extend %roboto-400;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -2653,7 +2653,7 @@
 
     &::placeholder {
       color: #828282;
-      @extend %cera-400;
+      @extend %roboto-400;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -2848,7 +2848,7 @@
   }
 
   &__top-text {
-    @extend %cera-400;
+    @extend %roboto-400;
     color: $fff;
     font-size: 22px;
     line-height: 110%;
@@ -2902,7 +2902,7 @@
 
   &__top-star-text {
     color: #fff;
-    @extend %cera-400;
+    @extend %roboto-400;
     font-size: 16px;
     line-height: normal;
     line-height: 110%;
@@ -3013,7 +3013,7 @@
 
   &__inner-item-top-date {
     color: #828282;
-    @extend %cera-400;
+    @extend %roboto-400;
     font-size: 16px;
     line-height: 110%;
     text-align: end;
@@ -3647,8 +3647,6 @@
   height: 372px;
   position: relative;
 
- 
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -3744,7 +3742,7 @@
     color: $fff;
     line-height: 120%;
     margin-bottom: 10px;
-    @extend %cera-400;
+    @extend %roboto-400;
     z-index: 1;
   }
 
@@ -3852,7 +3850,7 @@
   margin-bottom: 50px;
 
   &__main {
-    @extend %cera-400;
+    @extend %roboto-400;
     color: $fff;
   }
 
@@ -4434,7 +4432,7 @@
   }
 
   &__item-box-title {
-    @extend %cera-400;
+    @extend %roboto-400;
     font-size: 100px;
     text-transform: uppercase;
     background: linear-gradient(185deg, #C086EC 2.45%, #4D1A71 95.16%);
@@ -4876,6 +4874,7 @@
 .before__slick-services-page {
   margin-bottom: 20px;
 }
+
 .blog-services-page {
   margin-top: 100px;
 }
@@ -4896,6 +4895,7 @@
     background-image: url('../images/dog-blog.png');
     background-repeat: no-repeat;
   }
+
   &::before {
     position: absolute;
     content: '';
@@ -4905,6 +4905,106 @@
     height: 333px;
     background-image: url('../images/dog-blog-2.svg');
     background-repeat: no-repeat;
+  }
+}
+
+.breed-page-header {
+  background-image: url('../images/bg/bg-green.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  .header__content-right-img-3 {
+    position: absolute;
+    bottom: 0;
+    width: 28%;
+  }
+
+  .header__content {
+    margin-top: 40px;
+  }
+}
+
+.procedures {
+  margin-bottom: 150px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    background-color: #F9F9F9;
+    border-radius: 10px;
+  }
+
+  &__item {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #8050A3;
+
+    &:first-child {
+      border-bottom: none;
+      background: linear-gradient(180deg, #C086EC 2.45%, #4D1A71 95.16%);
+      color: $fff;
+      @extend %bebas;
+      font-size: 22px;
+      letter-spacing: 0.44px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__item-title {
+    width: 668px;
+    @extend %bebas;
+    font-size: 22px;
+  }
+
+  &__item-text {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  &__item-time {
+    padding-left: 35px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -3px;
+      left: 0;
+      width: 29px;
+      height: 29px;
+      background-image: url('../images/icons/time-violet-2.svg');
+    }
+  }
+
+  &__item-price {
+    color: $fff;
+    text-align: center;
+    @extend %bebas;
+    font-size: 16px;
+    padding: 6px 15px;
+    background-color: #8050A3;
+    border-radius: 3px;
+  }
+
+  &__item-time-main {
+    margin-left: 100px;
+  }
+
+  &__item-price-main {
+    margin-right: 50px;
   }
 }
 

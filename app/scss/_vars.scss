@@ -21,8 +21,14 @@ $active-btn-shadow: 0px 0px 0px 0px rgba(11, 55, 16, 0.30) inset, 0px 1px 1px 0p
   font-style: normal;
 }
 
+%roboto-400 {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
 %cera-400 {
-  font-family: 'CeraProRegular';
+  font-family: 'CeraRegular';
   font-weight: 400;
   font-style: normal;
 }

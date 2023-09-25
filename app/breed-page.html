@@ -1,0 +1,1469 @@
+ <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="application application--disactive">
+    <button class="application__btn-close">
+      <img src="images/icons/close-violet.svg" alt="close">
+    </button>
+    <div class="application__inner">
+      <h3 class="application__title title">
+        Запишитесь на услуги студии «PROХВОСТ»
+      </h3>
+      <p class="application__text">
+        Просто оставьте свои контакты и мы свяжемся с вами
+        <span>в течение 3 минут</span>
+      </p>
+      <form class="before__bottom-form" name="registration" method="post">
+        <div class="before__bottom-input-name-box">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status()"
+            onchange="change_Status()" name="name">
+        </div>
+        <div class="before__bottom-input-tel-box">
+          <input class="before__bottom-input-tel" id="phone" type="number" placeholder="+7 (___) ___ ___ __"
+            onkeyup="change_Status()" onchange="change_Status()" name="tel">
+        </div>
+        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start">
+          ОСТАВИТЬ ЗАЯВКУ
+        </button>
+        <label class="before__bottom-label">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status()"
+            onchange="change_Status()" name="check">
+          <span class="discount__bottom-checkbox"></span>
+          <span class="discount__bottom-input-text">
+            Согласие на обработку персональных данных
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <div class="thanks thanks--disactive">
+    <div class="container">
+      <div class="thanks__inner">
+        <button class="thanks__btn-close">
+          <img src="images/icons/close-violet.svg" alt="close">
+        </button>
+        <h3 class="thanks__title title">
+          спасибо!
+        </h3>
+        <p class="thanks__text">
+          Ваша заявка принята! Мы свяжемся
+          с вами в течение 3 минут
+        </p>
+        <img class="thanks__img" src="images/girl-thanks.png" alt="thanks">
+        <button class="thanks__btn btn-gold">
+          понятно, спасибо
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="review-popap review-popap--disactive">
+    <button class="review-popap__btn-close">
+      <img src="images/icons/close-violet.svg" alt="close">
+    </button>
+    <div class="review-popap__inner">
+      <h3 class="review-popap__title title">
+        МОЙ ОТЗЫВ
+      </h3>
+      <form class="before__bottom-form" name="formReview" method="post">
+        <div class="before__bottom-input-name-box">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status_review()"
+            onchange="change_Status_review()" name="nameReview">
+        </div>
+        <div class="before__bottom-input-tel-box">
+          <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameAnimalReview">
+        </div>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()" onchange="change_Status_review()" name="textareaReview"></textarea>
+        <div class="review-popap__box">
+          <p class="review-popap__text">
+            Оцените сервис и оказанную услугу
+          </p>
+          <div class="review-popap__star"></div>
+        </div>
+        <button class="before__bottom-btn btn-gold btn-review" type="submit" name="startReview">
+          ОСТАВИТЬ ЗАЯВКУ
+        </button>
+        <label class="before__bottom-label">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status_review()"
+            onchange="change_Status_review()" name="checkReview">
+          <span class="discount__bottom-checkbox"></span>
+          <span class="discount__bottom-input-text">
+            Согласие на обработку персональных данных
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <div class="thanks-review thanks-review--disactive">
+    <div class="container">
+      <div class="thanks__inner">
+        <button class="thanks__btn-close">
+          <img src="images/icons/close-violet.svg" alt="close">
+        </button>
+        <h3 class="thanks__title title">
+          спасибо!
+        </h3>
+        <p class="thanks__text">
+          Мы ценим вашу обратную связь! Она помогает делать наш сервис еще лучше.
+        </p>
+        <img class="thanks__img" src="images/girl-thanks-review.png" alt="thanks">
+        <button class="thanks__btn btn-gold">
+          понятно, спасибо
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header breed-page-header">
+    <div class="container">
+      <menu class="menu-margin-top"></menu>
+      <menu class="menu">
+        <button class="menu__btn services-page-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Собаки
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Кошки
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Мастера
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Салон
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">
+              Блог
+            </a>
+          </li>
+        </ul>
+        <a class="menu__logo">
+          Proхвост
+        </a>
+        <div class="menu__contacts">
+          <a class="menu__address">
+            г. Алматы, ул. Предгорная, 33
+          </a>
+          <a class="menu__phone" href="tel:+79528230647">
+            8 (952) 823-06-47
+          </a>
+        </div>
+      </menu>
+      <div class="header__content">
+        <div class="header__content-left">
+          <div class="breadcrumbs">
+            <a class="breadcrumbs__main" href="#">
+              Главная
+            </a>
+            <div class="breadcrumbs__dot"></div>
+            <p class="breadcrumbs__second">
+              Собаки
+            </p>
+          </div>
+          <h1 class="header__content-title">
+            Уход за пуделем 100%
+без стресса от 5000 ₸
+          </h1>
+          <p class="header__content-text">
+            Благодаря сертифицированным мастерам владеющими базовыми знаниями кинологии, ветеринарии и зоопсихологии
+          </p>
+          <div class="header__button-box">
+            <button class="header__button btn-gold btn-applic">
+              оставить заявку
+            </button>
+            <span>
+              Свяжемся с вами в течение 3 минут
+            </span>
+          </div>
+          <div class="header__content-info">
+            <div class="header__content-info-item header__content-info-garant">
+              100% гарантия безопасности и стерильности
+            </div>
+            <div class="header__content-info-item header__content-info-master">
+              Сертифицированные мастера со стажем от 5 лет
+            </div>
+            <div class="header__content-info-item header__content-info-percent">
+              Скидка 10% на первое посещение
+            </div>
+            <div class="header__content-info-item header__content-info-profession">
+              Профессиональная
+              косметика и инструменты
+            </div>
+          </div>
+        </div>
+        <div class="header__content-right">
+          <img class="header__content-right-img-3" src="images/bg/dog-header-bg-2.png" alt="dog">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">
+          Обращаясь к нам впервые 90% клиентов остаются с нами навсегда!
+        </h2>
+        <p class="services__text">
+          Комфорт питомца и качество услуг - основа на которой строится наш принцип работы
+        </p>
+        <div class="services__box">
+          <div class="services__item"
+            style="background-image: url('images/services/1.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Специалисты с
+              опытом от 5 лет
+            </h4>
+            <p class="services__item-text">
+              Мастера проходят контроль качества работ и ежегодно повышают квалификацию
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/2.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Профессиональные инструменты и оборудование
+            </h4>
+            <p class="services__item-text">
+              Используем в работе такие бренды, как: Komondor,
+              Wahl, Moser
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/3.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Гипоаллергенная косметика и препараты
+            </h4>
+            <p class="services__item-text">
+              Используем только профессиональную косметику: Iv San Bernard, Milord, Pro Animal
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/4.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Полный отказ от наркоза
+            </h4>
+            <p class="services__item-text">
+              Благодаря базовым знаниям кинологии и зоопсихологии, владеем адаптационными техниками животных
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/5.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              100% безопасность
+            </h4>
+            <p class="services__item-text">
+              Все инструменты подвергаются стерилизации проф. средствами после каждого клиента
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/6.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Присутствие во время процедур
+            </h4>
+            <p class="services__item-text">
+              Для вашего спокойствия, вы можете присутствовать во время процедур
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/7.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Консультация по уходу в домашних условиях в подарок
+            </h4>
+            <p class="services__item-text">
+              Специалист проконсультирует, как правильно ухаживать за животным дома
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/8.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Знания основ ветеринарии
+            </h4>
+            <p class="services__item-text">
+              Мастера владеют базовыми знаниями ветеринарии
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/9.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              зона ожидания для клиентов
+            </h4>
+            <p class="services__item-text">
+              Комфортная зона с креслами, бесплатным wi-fi, ароматным кофе, чаем и печеньем
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/10.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              Видеонаблюдение
+              за ходом процедуры
+            </h4>
+            <p class="services__item-text">
+              Вы сможете наблюдать за ходом процедуры и состоянием вашего четвероногого друга
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/11.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              2 часа передержки
+              бесплатно
+            </h4>
+            <p class="services__item-text">
+              Питомец дождется вас с комфортом. В услугу входят корм, вода, лежанка и лоток
+            </p>
+          </div>
+
+          <div class="services__item"
+            style="background-image: url('images/services/12.png'); background-repeat: no-repeat; background-size: cover;">
+            <h4 class="services__item-title">
+              принимаем даже агрессивных и пожилых питомцев
+            </h4>
+            <p class="services__item-text">
+              Знаем зоопсихологию и понимаем, как вести себя со сложными питомцами и как их успокоить
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-questions">
+      <div class="container">
+        <h2 class="price-questions__title title">
+          Узнайте точную стоимость стрижки<br> вашего питомца, ответив всего на 4 вопроса
+        </h2>
+        <div class="price-questions__inner">
+
+          <div class="price-questions__item price-questions__item-1">
+            <img class="price-questions__item-img-1" src="images/price-questions/1.svg" alt="decor">
+            <img class="price-questions__item-img-2" src="images/price-questions/2.svg" alt="decor">
+            <img class="price-questions__item-img-3" src="images/price-questions/3.svg" alt="decor">
+            <img class="price-questions__item-img-4" src="images/price-questions/4.svg" alt="decor">
+            <img class="price-questions__item-img-5" src="images/price-questions/5.svg" alt="decor">
+            <p class="price-questions__item-text">
+              Осталось 4 вопроса из 4
+            </p>
+            <div class="price-questions__item-lines">
+              <div class="price-questions__item-line price-questions__item-line-1">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-2">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-3">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-4">
+              </div>
+            </div>
+            <h4 class="price-questions__item-title">
+              Какой породы ваш питомец?
+            </h4>
+            <form class="price-questions__item-form">
+              <div class="price-questions__item-box">
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/1.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Шпиц</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/2.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Йорк</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/3.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Мальтезе</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/4.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Спаниэль</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/5.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Ши-тцу</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/6.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Пудель</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/7.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Пекинес</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/8.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Мальтипу</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/9.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Фокстерьер</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/10.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Самоед</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/11.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Цвергшнауцер</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/12.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Эрдельтерьер</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/13.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Бишон фризе</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/14.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Сиба-ину</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/15.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Такса</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/16.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Чау-чау</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/17.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Хаски</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/18.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Лабрадор</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/19.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Норвич</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/20.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Французский
+                      бульдог</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/21.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Корги</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/22.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Чихуахуа</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <div class="price-questions__item-box-content-image-cicle">
+                      <img class="price-questions__item-box-content-img" src="images/price-questions/23.png" alt="dog">
+                    </div>
+                    <span class="price-questions__item-box-content-name">Китайская
+                      хохлатая</span>
+                    <input class="price-questions__item-box-input" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-cicle-textarea">
+                  <textarea class="price-questions__item-box-content-textarea" name="textarea" id=""
+                    placeholder="Впишите свой вариант ответа"></textarea>
+                </div>
+
+              </div>
+
+              <button class="price-questions__button price-questions__button-1 btn-gold">
+                следующий шаг
+              </button>
+
+            </form>
+          </div>
+
+          <div class="price-questions__item price-questions__item-2 price-questions__item--disactive">
+            <img class="price-questions__item-img-1" src="images/price-questions/1.svg" alt="decor">
+            <img class="price-questions__item-img-2" src="images/price-questions/2.svg" alt="decor">
+            <img class="price-questions__item-img-3" src="images/price-questions/3.svg" alt="decor">
+            <img class="price-questions__item-img-4" src="images/price-questions/4.svg" alt="decor">
+            <img class="price-questions__item-img-5" src="images/price-questions/5.svg" alt="decor">
+            <p class="price-questions__item-text">
+              Осталось 3 вопроса из 4
+            </p>
+            <div class="price-questions__item-lines">
+              <div class="price-questions__item-line price-questions__item-line-1">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-2">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-3">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-4">
+              </div>
+            </div>
+            <h4 class="price-questions__item-title">
+              Какой вес у вашего питомца?
+            </h4>
+            <form class="price-questions__item-form">
+              <div class="price-questions__item-box">
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">До 5 кг</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">5-10 кг</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">10-20 кг</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">20-30 кг</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-cicle-textarea">
+                  <textarea class="price-questions__item-box-content-textarea" name="textarea" id=""
+                    placeholder="Впишите свой вариант ответа"></textarea>
+                </div>
+
+              </div>
+
+              <div class="price-questions__buttons">
+                <button class="price-questions__btn-back price-questions__btn-back-1">
+                  назад
+                </button>
+                <button class="price-questions__button price-questions__button-2 btn-gold">
+                  следующий шаг
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="price-questions__item price-questions__item-3 price-questions__item--disactive">
+            <img class="price-questions__item-img-1" src="images/price-questions/1.svg" alt="decor">
+            <img class="price-questions__item-img-2" src="images/price-questions/2.svg" alt="decor">
+            <img class="price-questions__item-img-3" src="images/price-questions/3.svg" alt="decor">
+            <img class="price-questions__item-img-4" src="images/price-questions/4.svg" alt="decor">
+            <img class="price-questions__item-img-5" src="images/price-questions/5.svg" alt="decor">
+            <p class="price-questions__item-text">
+              Осталось 2 вопроса из 4
+            </p>
+            <div class="price-questions__item-lines">
+              <div class="price-questions__item-line price-questions__item-line-1">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-2">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-3">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-4">
+              </div>
+            </div>
+            <h4 class="price-questions__item-title">
+              выберите удобное время для посещения салона
+            </h4>
+            <form class="price-questions__item-form">
+              <div class="price-questions__item-box">
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">10:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">11:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">12:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">13:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">14:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">15:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">16:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">17:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">18:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">19:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">20:00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <span class="price-questions__item-box-content-name">21 :00</span>
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                </div>
+
+                <div class="price-questions__item-box-content-cicle-textarea">
+                  <textarea class="price-questions__item-box-content-textarea" name="textarea" id=""
+                    placeholder="Впишите свой вариант ответа"></textarea>
+                </div>
+
+              </div>
+
+              <div class="price-questions__buttons">
+                <button class="price-questions__btn-back price-questions__btn-back-2">
+                  назад
+                </button>
+                <button class="price-questions__button price-questions__button-3 btn-gold">
+                  следующий шаг
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="price-questions__item price-questions__item-4 price-questions__item--disactive">
+            <img class="price-questions__item-img-1" src="images/price-questions/1.svg" alt="decor">
+            <img class="price-questions__item-img-2" src="images/price-questions/2.svg" alt="decor">
+            <img class="price-questions__item-img-3" src="images/price-questions/3.svg" alt="decor">
+            <img class="price-questions__item-img-4" src="images/price-questions/4.svg" alt="decor">
+            <img class="price-questions__item-img-5" src="images/price-questions/5.svg" alt="decor">
+            <p class="price-questions__item-text">
+              Осталось 1 вопроса из 4
+            </p>
+            <div class="price-questions__item-lines">
+              <div class="price-questions__item-line price-questions__item-line-1">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-2">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-3">
+              </div>
+              <div class="price-questions__item-line price-questions__item-line-4">
+              </div>
+            </div>
+            <h4 class="price-questions__item-title">
+              выберите подарок к услуге
+            </h4>
+            <form class="price-questions__item-form">
+              <div class="price-questions__item-box">
+
+                <div class="price-questions__item-box-content-item">
+                  <label class="price-questions__item-box-label">
+                    <img src="images/price-questions/present.png" alt="present">
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                  <span class="price-questions__item-box-content-name">Игрушка из нашего магазина</span>
+                </div>
+
+                <div class="price-questions__item-box-content-item price-questions__item-box-content-item-2">
+                  <label class="price-questions__item-box-label">
+                    <img src="images/price-questions/present-2.png" alt="present">
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                  <span class="price-questions__item-box-content-name">Лакомство для вашего питомца</span>
+                </div>
+
+                <div class="price-questions__item-box-content-item price-questions__item-box-content-item-3">
+                  <label class="price-questions__item-box-label">
+                    <img src="images/price-questions/present-3.png" alt="present">
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                  <span class="price-questions__item-box-content-name">Украшение</span>
+                </div>
+
+                <div class="price-questions__item-box-content-item price-questions__item-box-content-item-4">
+                  <label class="price-questions__item-box-label">
+                    <img src="images/price-questions/present-4.png" alt="present">
+                    <input class="price-questions__item-box-input-2" type="radio" name="questions-dog">
+                    <span class="price-questions__item-box-checkbox-2"></span>
+                  </label>
+                  <span class="price-questions__item-box-content-name">Лакомство для вашего питомца</span>
+                </div>
+
+              </div>
+
+              <div class="price-questions__buttons">
+                <button class="price-questions__btn-back price-questions__btn-back-3">
+                  назад
+                </button>
+                <button class="price-questions__button price-questions__button-4 btn-gold">
+                  следующий шаг
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="price-questions__item price-questions__item-5 price-questions__item--disactive">
+            <img class="price-questions__item-img-1" src="images/price-questions/1.svg" alt="decor">
+            <img class="price-questions__item-img-2" src="images/price-questions/2.svg" alt="decor">
+            <img class="price-questions__item-img-3" src="images/price-questions/3.svg" alt="decor">
+            <img class="price-questions__item-img-4" src="images/price-questions/4.svg" alt="decor">
+            <img class="price-questions__item-img-5" src="images/price-questions/5.svg" alt="decor">
+            <h4 class="price-questions__item-title">
+              Остался последний шаг!
+            </h4>
+            <p class="price-questions__item-title-text">
+              Введите ваши контактные данные и мы закрепим за вами скидку 15%
+            </p>
+            <form class="price-questions__item-form">
+              <div class="price-questions__item-box">
+
+                <div class="before__bottom-input-name-box">
+                  <input type="text" class="before__bottom-input-name" placeholder="Введите ваше имя">
+                </div>
+                <div class="before__bottom-input-tel-box">
+                  <input type="tel" class="before__bottom-input-tel" placeholder="+7 (___) ___ ___ __">
+                </div>
+              </div>
+              <div class="price-questions__item-box price-questions__item-box-2">
+                <div class="price-questions__buttons">
+                  <button class="price-questions__btn-back price-questions__btn-back-4">
+                    назад
+                  </button>
+                  <button class="price-questions__button price-questions__button-5 btn-gold">
+                    следующий шаг
+                  </button>
+                </div>
+                <label class="before__bottom-label">
+                  <input class="discount__bottom-input-check" type="checkbox">
+                  <span class="discount__bottom-checkbox"></span>
+                  <span class="discount__bottom-input-text">
+                    Я принимаю условия Соглашения
+                  </span>
+                </label>
+              </div>
+            </form>
+
+          </div>
+
+          <div class="questions__choice--6 questions__choice price-questions__item--disactive">
+            <img class="price-questions__item-img-1" src="images/price-questions/1.svg" alt="decor">
+            <img class="price-questions__item-img-2" src="images/price-questions/2.svg" alt="decor">
+            <img class="price-questions__item-img-3" src="images/price-questions/3.svg" alt="decor">
+            <img class="price-questions__item-img-4" src="images/price-questions/4.svg" alt="decor">
+            <img class="price-questions__item-img-5" src="images/price-questions/5.svg" alt="decor">
+            <h3 class="questions__choice-title">
+              Остался последний шаг!
+            </h3>
+            <p class="questions__choice-text">
+              Наш менеджер свяжется с вами в течение 3 минут
+            </p>
+            <img src="images/questions-files/girl-2.png" alt="girl">
+            <button class="questions__choice-btn--6 btn-gold">
+              понятно, спасибо
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="procedures">
+      <div class="container">
+        <h2 class="procedures__title title">
+          процедуры, которые позволят вашему питомцу выглядеть безупречно
+        </h2>
+         <div class="procedures__inner">
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              наименование услуги
+            </h4>
+            <p class="procedures__item-time-main">
+              дополнительные услуги
+            </p>
+            <p class="procedures__item-price-main">
+              цена
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              Гигиена
+              <span class="procedures__item-text">Забривание лап между подушечек, забривание паховой зоны, чистка либо выщипывание ушей, чистка глаз, подравниевание стрижки по контуру.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              Стрижка
+              <span class="procedures__item-text">Купание, сушка, стрижка на выбор, стрижка машинкой или ножницами по корпусу, Подстригание когтей.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              Экспресс- линька
+              <span class="procedures__item-text">Вычесывание, выдув шерсти компрессором, питающий бальзам от
+                выпадения шерсти, подстригание когтей, чистка глаз и ушей.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              тримминг
+              <span class="procedures__item-text">Расчесывание (+дополнительно распутывание колтунов), выщипывание шерсти, вычесывание, мытье, сушка, успокаивание кожи после процедуры.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              spa-процедуры
+              <span class="procedures__item-text">Обертывание, скрабирование, увлажняющие маски для улучшения структуры шерсти, озонотерапия, микромассаж, лечебная косметика.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              профилактическая чистка зубов
+              <span class="procedures__item-text">Профилактическая чистка специльными пастой и щетками, профилактика зубного камня, избавление от неприятного запаха.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              креативное окрашивание
+              <span class="procedures__item-text">Креативные узоры, окрашивание, блеск-тату, украшение стразами.</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+          <div class="procedures__item">
+            <h4 class="procedures__item-title">
+              зоотакси
+              <span class="procedures__item-text">Перевозка питомца, пеленки, выгул животного</span>
+            </h4>
+            <p class="procedures__item-time">
+              ~180 мин
+            </p>
+            <p class="procedures__item-price">
+              от 8 000 ₸ 
+            </p>
+          </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="promotion">
+      <div class="container">
+        <h2 class="promotion__title title">
+          закажите комплекс услуг и получите <a href="#">скидку 20%</a>
+        </h2>
+        <div class="promotion__inner">
+
+          <div class="promotion__item">
+            <div>
+              <div class="promotion__item-box-title">
+                <h3 class="promotion__item-num">
+                  1
+                </h3>
+                <h4 class="promotion__item-title">
+                  Комплекс со стрижкой тела машинкой полностью
+                </h4>
+              </div>
+              <ul class="promotion__item-list">
+                <li class="promotion__item-list-li">
+                  Мытье/сушка
+                </li>
+                <li class="promotion__item-list-li">
+                  Чистка глаз и ушей
+                </li>
+                <li class="promotion__item-list-li">
+                  Стрижка когтей
+                </li>
+                <li class="promotion__item-list-li">
+                  Гигиена интим-зоны
+                </li>
+                <li class="promotion__item-list-li">
+                  Стрижка тела машинкой полностью
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="promotion__item-time">
+                <span>Длительность</span>
+                <span>~180 мин</span>
+              </div>
+              <div class="promotion__item-box-price">
+                <span class="promotion__item-price">
+                  Цена:
+                </span>
+                <span class="promotion__item-price-num">
+                  25 000 ₸
+                </span>
+                <span class="promotion__item-price-old-num">
+                  45 000 ₸
+                </span>
+              </div>
+              <button class="promotion__btn btn-gold btn-applic">
+                записаться
+              </button>
+            </div>
+          </div>
+
+          <div class="promotion__item">
+            <div>
+              <div class="promotion__item-box-title">
+                <h3 class="promotion__item-num">
+                  2
+                </h3>
+                <h4 class="promotion__item-title">
+                  Комплекс с <br>
+                  экспресс-линькой
+                </h4>
+              </div>
+              <ul class="promotion__item-list">
+                <li class="promotion__item-list-li">
+                  Мытье/сушка
+                </li>
+                <li class="promotion__item-list-li">
+                  Выдув шерсти компрессором
+                </li>
+                <li class="promotion__item-list-li">
+                  Стрижка когтей
+                </li>
+                <li class="promotion__item-list-li">
+                  Питающий бальзам от
+                  выпадения шерсти
+                </li>
+                <li class="promotion__item-list-li">
+                  Чистка глаз и ушей
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="promotion__item-time">
+                <span>Длительность</span>
+                <span>~180 мин</span>
+              </div>
+              <div class="promotion__item-box-price">
+                <span class="promotion__item-price">
+                  Цена:
+                </span>
+                <span class="promotion__item-price-num">
+                  25 000 ₸
+                </span>
+                <span class="promotion__item-price-old-num">
+                  45 000 ₸
+                </span>
+              </div>
+              <button class="promotion__btn btn-gold btn-applic">
+                записаться
+              </button>
+            </div>
+          </div>
+
+          <div class="promotion__item">
+            <div>
+              <div class="promotion__item-box-title">
+                <h3 class="promotion__item-num">
+                  3
+                </h3>
+                <h4 class="promotion__item-title">
+                  мытье/сушка+гигиена
+                </h4>
+              </div>
+              <ul class="promotion__item-list">
+                <li class="promotion__item-list-li">
+                  Мытье/сушка
+                </li>
+                <li class="promotion__item-list-li">
+                  Чистка глаз и ушей
+                </li>
+                <li class="promotion__item-list-li">
+                  Стрижка когтей
+                </li>
+                <li class="promotion__item-list-li">
+                  Гигиена интим-зоны
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="promotion__item-time">
+                <span>Длительность</span>
+                <span>~180 мин</span>
+              </div>
+              <div class="promotion__item-box-price">
+                <span class="promotion__item-price">
+                  Цена:
+                </span>
+                <span class="promotion__item-price-num">
+                  25 000 ₸
+                </span>
+                <span class="promotion__item-price-old-num">
+                  45 000 ₸
+                </span>
+              </div>
+              <button class="promotion__btn btn-gold btn-applic">
+                записаться
+              </button>
+            </div>
+          </div>
+
+          <div class="promotion__item">
+            <div>
+              <div class="promotion__item-box-title">
+                <h3 class="promotion__item-num">
+                  4
+                </h3>
+                <h4 class="promotion__item-title">
+                  мытье/сушка+гигиена
+                </h4>
+              </div>
+              <ul class="promotion__item-list">
+                <li class="promotion__item-list-li">
+                  Мытье/сушка
+                </li>
+                <li class="promotion__item-list-li">
+                  Чистка глаз и ушей
+                </li>
+                <li class="promotion__item-list-li">
+                  Стрижка когтей
+                </li>
+                <li class="promotion__item-list-li">
+                  Гигиена интим-зоны
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="promotion__item-time">
+                <span>Длительность</span>
+                <span>~180 мин</span>
+              </div>
+              <div class="promotion__item-box-price">
+                <span class="promotion__item-price">
+                  Цена:
+                </span>
+                <span class="promotion__item-price-num">
+                  25 000 ₸
+                </span>
+                <span class="promotion__item-price-old-num">
+                  45 000 ₸
+                </span>
+              </div>
+              <button class="promotion__btn btn-gold btn-applic">
+                записаться
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer-index">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-box">
+          <div class="footer__inner-box-left">
+            <a class="menu__logo">
+              Proхвост
+            </a>
+            <span class="footer__inner-box-span">
+              Груминг для ваших<br>
+              домашних животных
+            </span>
+            <button class="footer__btn btn-gold btn-applic">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+            <div class="footer__inner-box-links">
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/vk.svg" alt="">
+              </a>
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/facebook.svg" alt="">
+              </a>
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/instagram.svg" alt="instagram">
+              </a>
+            </div>
+            <p class="footer__inner-box-text">
+              Согласие на обработку данных
+            </p>
+            <p class="footer__inner-box-text">
+              Политика конфиденциальности
+            </p>
+          </div>
+          <div class="footer__inner-content-left">
+            <h4 class="footer__inner-content-left-title">
+              Услуги
+            </h4>
+            <ul class="footer__inner-content-list">
+              <li class="footer__inner-content-item">
+                Стрижка собак
+              </li>
+              <li class="footer__inner-content-item">
+                Комплексный уход
+              </li>
+              <li class="footer__inner-content-item">
+                Приучение к грумингу
+              </li>
+              <li class="footer__inner-content-item">
+                Аппаратный лапакюр
+              </li>
+              <li class="footer__inner-content-item">
+                Мытье
+              </li>
+              <li class="footer__inner-content-item">
+                SPA
+              </li>
+              <li class="footer__inner-content-item">
+                Чистка зубов
+              </li>
+              <li class="footer__inner-content-item">
+                Покраска
+              </li>
+            </ul>
+          </div>
+        </div>
+<div class="footer__inner-image">
+  <img class="footer__inner-img" src="images/dog-footer.png" alt="dog">
+</div>
+        <div class="footer__inner-content">
+          <div class="footer__inner-content-right">
+            <div class="footer__inner-content-right-box">
+              <div class="footer__inner-content-links">
+                <a class="footer__inner-content-link" href="#">
+                  собаки
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  Кошки
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  мастера
+                </a>
+              </div>
+              <div class="footer__inner-content-links">
+                <a class="footer__inner-content-link" href="#">
+                  салон
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  блог
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  о нас
+                </a>
+              </div>
+            </div>
+            <p class="footer__inner-content-tel">
+              8 (800) 000-00-00
+            </p>
+            <p class="footer__inner-content-email">
+              email@email.com
+            </p>
+            <p class="footer__inner-content-address">
+              г. Алматы, ул. Предгорная, 33
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
