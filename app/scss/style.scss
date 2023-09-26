@@ -4955,6 +4955,7 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
+
     &:last-child {
       border-bottom: none;
     }
@@ -5006,6 +5007,139 @@
   &__item-price-main {
     margin-right: 50px;
   }
+}
+
+.hairstyles {
+  margin-bottom: 150px;
+
+  &__inner {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%);
+    padding: 50px;
+    margin-bottom: 150px;
+    position: relative;
+  }
+
+  &__title {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  &__inner-box-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-1,
+  &__img-2,
+  &__img-3,
+  &__img-4 {
+    position: absolute;
+  }
+
+  &__img-1 {
+    bottom: 0;
+    transform: translateX(38%);
+    width: 63%;
+    z-index: 1;
+  }
+
+  &__img-2 {
+    top: 40px;
+    transform: translateX(1100%);
+  }
+
+  &__img-3 {
+    top: 120px;
+    transform: translateX(1100%);
+  }
+
+  &__img-4 {
+    bottom: 0;
+    transform: translateX(38%);
+    width: 63%;
+  }
+
+  &__inner-item {
+    padding: 20px;
+    background-color: $fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 538px;
+  }
+
+  &__inner-item-1 {
+    height: 96%;
+  }
+
+  &__inner-item-2 {
+    width: 217px;
+  }
+
+  &__inner-item-title {
+    @extend %bebas;
+    font-size: 20px;
+    color: $text;
+    padding: 20px 0;
+  }
+
+  &__inner-item-text {
+    color: $text;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__inner-item-text-dot {
+    position: relative;
+    padding-left: 30px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 10px;
+      left: 11px;
+      width: 4px;
+      height: 4px;
+      background-color: $text;
+      border-radius: 50%;
+    }
+  }
+}
+
+.before__slick-breed-page {
+  margin-bottom: 50px;
+}
+
+.header-contacts {
+  background-image: none;
+
+  .menu {
+    background-color: #F9F9F9;
+    box-shadow: none;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumbs__main,
+  .breadcrumbs__second {
+color: $text;
+  }
+  .breadcrumbs__dot {
+    background-color: $text;
+  }
+
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #8050A3;
+  }
+}
+
+.contacts-contacts {
+  margin-bottom: 150px;
 }
 
 
