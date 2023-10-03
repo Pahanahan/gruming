@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -80,14 +78,15 @@
       </h3>
       <form class="before__bottom-form" name="formReview" method="post">
         <div class="before__bottom-input-name-box">
-          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status_review()"
-            onchange="change_Status_review()" name="nameReview">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя"
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameReview">
         </div>
         <div class="before__bottom-input-tel-box">
           <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
             onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameAnimalReview">
         </div>
-        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()" onchange="change_Status_review()" name="textareaReview"></textarea>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()"
+          onchange="change_Status_review()" name="textareaReview"></textarea>
         <div class="review-popap__box">
           <p class="review-popap__text">
             Оцените сервис и оказанную услугу
@@ -183,25 +182,61 @@
         </a>
         <div class="breadcrumbs__dot"></div>
         <p class="breadcrumbs__second">
-          Собаки
+          Контакты
         </p>
       </div>
-     
-      <div class="header__box">
-        <h2 class="header__box-title white-title">
+
+      <div class="contacts-top">
+        <h2 class="contacts-top__title white-title">
           наши контакты
         </h2>
-        <div class="header__box-inner">
-          <div class="header__box-item">
- 
+        <div class="contacts-top__inner">
+          <div class="contacts-top__item">
+            <h3 class="contacts-top__item-info-title">
+              алматы
+            </h3>
+            <div class="contacts-top__item-info">
+              <p class="contacts-top__item-info-adress">
+                г. Алматы, ул. Предгорная 33
+              </p>
+              <p class="contacts-top__item-info-time">
+                С 8:00 до 20:00 без выходных
+              </p>
+              <p class="contacts-top__item-info-tel">
+                +7 (222) 222-22-22
+              </p>
+            </div>
+            <a class="contacts-top__item-email">
+              Напишите нам<span>nazvanie@email.com</span>
+            </a>
+            <div class="contacts-top__item-images">
+              <a href="#">
+                <img class="contacts-top__item-img" src="images/contacts/vk.png" alt="vk">
+              </a>
+              <a href="#">
+                <img class="contacts-top__item-img" src="images/contacts/facebook.png" alt="facebook">
+              </a>
+              <a href="#">
+                <img class="contacts-top__item-img" src="images/contacts/instagramm.png" alt="instagram">
+              </a>
+            </div>
+            <button class="contacts-top__item-button btn-gold">связаться с нами</button>
           </div>
-
-
-
-          <div class="header__box-item"></div>
+          <div class="contacts-top__item-2">
+              <iframe class="contacts-top__map" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21726.7465035408!2d37.53488937786692!3d47.10214226820457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e335da0e7bc3%3A0x32c61dcd41c1b0bc!2z0JTRgNCw0LzRgtC10LDRgtGA!5e0!3m2!1sru!2sru!4v1696013459560!5m2!1sru!2sru"
+              width="716" height="478" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="contacts-top__item-2-time">
+              <img class="contacts-top__item-2-time-img" src="images/contacts/time-white.png" alt="time">
+              <span>работаем</span>
+              с 8.00 до 20-00
+            </div>
+            <button class="contacts-top__item-2-button btn-gold">построить маршрут</button>
+          </div>
         </div>
       </div>
-
 
     </div>
   </header>
@@ -241,7 +276,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer-index">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__inner-box">
@@ -306,6 +341,9 @@
             </ul>
           </div>
         </div>
+<div class="footer__inner-image">
+  <img class="footer__inner-img" src="images/dog-footer.png" alt="dog">
+</div>
         <div class="footer__inner-content">
           <div class="footer__inner-content-right">
             <div class="footer__inner-content-right-box">
@@ -349,8 +387,6 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

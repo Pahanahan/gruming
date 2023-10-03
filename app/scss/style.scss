@@ -5124,23 +5124,290 @@
 
   .breadcrumbs__main,
   .breadcrumbs__second {
-color: $text;
+    color: $text;
   }
+
   .breadcrumbs__dot {
     background-color: $text;
   }
 
-  .header__box {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    background-color: #8050A3;
-  }
 }
 
 .contacts-contacts {
   margin-bottom: 150px;
 }
+
+.contacts-top {
+  border-radius: 20px;
+  background-color: #8050A3;
+  padding: 50px;
+  margin-bottom: 150px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    width: 394px;
+    height: 509px;
+    transform: rotate(-41.788deg);
+    filter: blur(70px);
+    background-image: url('../images/contacts/white-cicle.png');
+  }
+
+  &__title {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -21px;
+      right: 28px;
+      background-image: url('../images/contacts/dog.png');
+      width: 88px;
+      height: 122px;
+    }
+  }
+
+  &__item-info {
+    background-color: $fff;
+    padding: 30px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    margin-bottom: 30px;
+  }
+
+  &__item-info-title {
+    @extend %bebas;
+    color: $text;
+    font-size: 30px;
+    line-height: 130%;
+    background-color: $fff;
+    display: inline-block;
+    margin-top: -13px;
+    padding: 30px 60px 0 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__item-info-adress,
+  &__item-info-time,
+  &__item-info-tel {
+    margin-bottom: 25px;
+    color: $text;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  &__item-info-adress::after {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: -3px;
+    width: 34px;
+    height: 34px;
+    background-image: url('../images/contacts/place.png');
+  }
+
+  &__item-info-time::after {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: -3px;
+    width: 34px;
+    height: 34px;
+    background-image: url('../images/contacts/time.png');
+  }
+
+  &__item-info-tel::after {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: -3px;
+    width: 34px;
+    height: 34px;
+    background-image: url('../images/contacts/phone.png');
+  }
+
+  &__item-email {
+    color: $fff;
+    @extend %bebas;
+    font-size: 24px;
+    line-height: 130%;
+
+    span {
+      @extend %cera-400;
+      font-size: 16px;
+      text-decoration-line: underline;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__item-images {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__item-button {
+    width: 234px;
+    height: 57px;
+    cursor: pointer;
+  }
+
+  &__map {
+    border-radius: 20px;
+  }
+
+  &__item-2 {
+    position: relative;
+  }
+
+  &__item-2-time {
+    position: absolute;
+    top: -35px;
+    right: 28px;
+    padding: 15px;
+    padding-left: 70px;
+    color: $fff;
+    @extend %cera-700;
+    background: linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%);
+    border-radius: 15px;
+
+    span {
+      display: block;
+      @extend %cera-400;
+      text-align: end;
+    }
+  }
+
+  &__item-2-time-img {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+  }
+
+  &__item-2-button {
+    position: absolute;
+    width: 233px;
+    height: 57px;
+    bottom: 32px;
+    right: 56px;
+  }
+}
+
+.vacancies {
+  margin-bottom: 150px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%);
+    display: flex;
+    position: relative;
+  }
+
+  &__item-img {
+    position: absolute;
+    top: -7px;
+    left: -14px;
+  }
+
+  &__inner-box {
+    padding: 25px;
+    margin-left: 155px;
+  }
+
+  &__item-title {
+    color: $fff;
+    @extend %bebas;
+    font-size: 30px;
+    line-height: 105%;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__item-text,
+  &__item-text-work,
+  &__item-text-payment {
+    line-height: 120%;
+    color: $fff;
+    margin-bottom: 15px;
+  }
+
+  &__item-text-work,
+  &__item-text-payment {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  &__item-text-work::after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    width: 23px;
+    height: 20px;
+    background-image: url('../images/vacancies/clock.svg');
+  }
+
+  &__item-text-payment::after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    width: 23px;
+    height: 20px;
+    background-image: url('../images/vacancies/paymant.svg');
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    height: 57px;
+  }
+}
+
+.video-white {
+background-color: #fff;
+}
+
+.block-white {
+  background-color: #f9f9f9;
+  background-image: none;
+  &__title,
+  &__text,
+  &__label-input-text,
+  &__text-girl {
+    color: $text;
+  }
+}
+
 
 
 @import '_media';

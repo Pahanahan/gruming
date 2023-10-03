@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -80,14 +78,15 @@
       </h3>
       <form class="before__bottom-form" name="formReview" method="post">
         <div class="before__bottom-input-name-box">
-          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status_review()"
-            onchange="change_Status_review()" name="nameReview">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя"
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameReview">
         </div>
         <div class="before__bottom-input-tel-box">
           <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
             onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameAnimalReview">
         </div>
-        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()" onchange="change_Status_review()" name="textareaReview"></textarea>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()"
+          onchange="change_Status_review()" name="textareaReview"></textarea>
         <div class="review-popap__box">
           <p class="review-popap__text">
             Оцените сервис и оказанную услугу
@@ -129,7 +128,7 @@
     </div>
   </div>
 
-  <header class="header">
+  <header class="header header-contacts">
     <div class="container">
       <menu class="menu-margin-top"></menu>
       <menu class="menu">
@@ -177,47 +176,14 @@
           </a>
         </div>
       </menu>
-      <div class="header__content">
-        <div class="header__content-left">
-          <h1 class="header__content-title">
-            Груминг питомца за 50 минут –
-            100% без стресса от 5 000 ₸
-          </h1>
-          <p class="header__content-text">
-            Благодаря мастерам с 5 летним стажем владеющими адаптационными техниками работы с питомцами
-          </p>
-          <div class="header__button-box">
-            <button class="header__button btn-gold btn-applic">
-              оставить заявку
-            </button>
-            <span>
-              Свяжемся с вами в течение 3 минут
-            </span>
-          </div>
-          <div class="header__content-info">
-            <div class="header__content-info-item header__content-info-garant">
-              100% гарантия безопасности и стерильности
-            </div>
-            <div class="header__content-info-item header__content-info-master">
-              Сертифицированные мастера со стажем от 5 лет
-            </div>
-            <div class="header__content-info-item header__content-info-percent">
-              Скидка 10% на первое посещение
-            </div>
-            <div class="header__content-info-item header__content-info-profession">
-              Профессиональная
-              косметика и инструменты
-            </div>
-          </div>
-        </div>
-        <div class="header__content-right">
-          <div class="header__content-right-slider">
-            <div class="header__content-right-slider-item">
-            </div>
-            <div class="header__content-right-slider-item-2">
-            </div>
-          </div>
-        </div>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs__main" href="#">
+          Главная
+        </a>
+        <div class="breadcrumbs__dot"></div>
+        <p class="breadcrumbs__second">
+          Контакты
+        </p>
       </div>
     </div>
   </header>
@@ -228,7 +194,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer-index">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__inner-box">
@@ -293,6 +259,9 @@
             </ul>
           </div>
         </div>
+<div class="footer__inner-image">
+  <img class="footer__inner-img" src="images/dog-footer.png" alt="dog">
+</div>
         <div class="footer__inner-content">
           <div class="footer__inner-content-right">
             <div class="footer__inner-content-right-box">
@@ -336,8 +305,6 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
