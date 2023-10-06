@@ -32,7 +32,7 @@
           <input class="before__bottom-input-tel" id="phone" type="number" placeholder="+7 (___) ___ ___ __"
             onkeyup="change_Status()" onchange="change_Status()" name="tel">
         </div>
-        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start">
+        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start" disabled>
           ОСТАВИТЬ ЗАЯВКУ
         </button>
         <label class="before__bottom-label">
@@ -130,114 +130,259 @@
 
   <header class="header header-contacts">
     <div class="container">
-      <menu class="menu-margin-top"></menu>
-      <menu class="menu">
-        <button class="menu__btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Собаки
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Кошки
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Акции
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Салон
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Блог
-            </a>
-          </li>
-        </ul>
-        <a class="menu__logo">
-          Proхвост
-        </a>
-        <div class="menu__contacts">
-          <a class="menu__address">
-            г. Алматы, ул. Предгорная, 33
+      <div class="header__container">
+        <menu class="menu-margin-top"></menu>
+        <menu class="menu">
+          <button class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Собаки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Кошки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Салон
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Блог
+              </a>
+            </li>
+          </ul>
+          <a class="menu__logo">
+            Proхвост
           </a>
-          <a class="menu__phone" href="tel:+79528230647">
-            8 (952) 823-06-47
-          </a>
-        </div>
-      </menu>
-      <div class="breadcrumbs">
-        <a class="breadcrumbs__main" href="#">
-          Главная
-        </a>
-        <div class="breadcrumbs__dot"></div>
-        <p class="breadcrumbs__second">
-          Контакты
-        </p>
-      </div>
-
-      <div class="contacts-top">
-        <h2 class="contacts-top__title white-title">
-          наши контакты
-        </h2>
-        <div class="contacts-top__inner">
-          <div class="contacts-top__item">
-            <h3 class="contacts-top__item-info-title">
-              алматы
+          <div class="menu__contacts">
+            <a class="menu__address">
+              г. Алматы, ул. Предгорная, 33
+            </a>
+            <a class="menu__phone" href="tel:+79528230647">
+              8 (952) 823-06-47
+            </a>
+          </div>
+        </menu>
+        <div class="menu-open">
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              наши услуги
             </h3>
-            <div class="contacts-top__item-info">
-              <p class="contacts-top__item-info-adress">
-                г. Алматы, ул. Предгорная 33
-              </p>
-              <p class="contacts-top__item-info-time">
-                С 8:00 до 20:00 без выходных
-              </p>
-              <p class="contacts-top__item-info-tel">
-                +7 (222) 222-22-22
-              </p>
-            </div>
-            <a class="contacts-top__item-email">
-              Напишите нам<span>nazvanie@email.com</span>
-            </a>
-            <div class="contacts-top__item-images">
-              <a href="#">
-                <img class="contacts-top__item-img" src="images/contacts/vk.png" alt="vk">
-              </a>
-              <a href="#">
-                <img class="contacts-top__item-img" src="images/contacts/facebook.png" alt="facebook">
-              </a>
-              <a href="#">
-                <img class="contacts-top__item-img" src="images/contacts/instagramm.png" alt="instagram">
-              </a>
-            </div>
-            <button class="contacts-top__item-button btn-gold">связаться с нами</button>
+            <span class="menu-open__item-span">
+              Гигиена
+            </span>
+            <span class="menu-open__item-span">
+              Экспресс-линька
+            </span>
+            <span class="menu-open__item-span">
+              Мытье и сушка
+            </span>
+            <span class="menu-open__item-span">
+              Тримминг
+            </span>
+            <span class="menu-open__item-span">
+              Стрижка
+            </span>
+            <span class="menu-open__item-span">
+              Стрижка когтей
+            </span>
+            <span class="menu-open__item-span">
+              Чистка ушей и глаз
+            </span>
+            <span class="menu-open__item-span">
+              Чистка зубов
+            </span>
+            <span class="menu-open__item-span">
+              SPA
+            </span>
           </div>
-          <div class="contacts-top__item-2">
-              <iframe class="contacts-top__map" 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21726.7465035408!2d37.53488937786692!3d47.10214226820457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e335da0e7bc3%3A0x32c61dcd41c1b0bc!2z0JTRgNCw0LzRgtC10LDRgtGA!5e0!3m2!1sru!2sru!4v1696013459560!5m2!1sru!2sru"
-              width="716" height="478" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="contacts-top__item-2-time">
-              <img class="contacts-top__item-2-time-img" src="images/contacts/time-white.png" alt="time">
-              <span>работаем</span>
-              с 8.00 до 20-00
+
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              породы собак
+            </h3>
+            <span class="menu-open__item-span">
+              Пекинес
+            </span>
+            <span class="menu-open__item-span">
+              Мальтезе
+            </span>
+            <span class="menu-open__item-span">
+              Лабрадор
+            </span>
+            <span class="menu-open__item-span">
+              Чау-чау
+            </span>
+            <span class="menu-open__item-span">
+              Сиба-ину
+            </span>
+            <span class="menu-open__item-span">
+              Эрдельтерьер
+            </span>
+            <span class="menu-open__item-span">
+              Корги
+            </span>
+            <span class="menu-open__item-span">
+              Хаски
+            </span>
+            <span class="menu-open__item-span">
+              Самоед
+            </span>
+            <span class="menu-open__item-span">
+              Фокстерьер
+            </span>
+            <span class="menu-open__item-span">
+              Спаниэль
+            </span>
+            <span class="menu-open__item-span">
+              Джек рассел
+            </span>
+            <span class="menu-open__item-span">
+              Шпиц
+            </span>
+            <span class="menu-open__item-span">
+              Чихуахуа
+            </span>
+            <span class="menu-open__item-span">
+              Китайская хохлатая
+            </span>
+            <span class="menu-open__item-span">
+              Йоркширский терьер
+            </span>
+            <span class="menu-open__item-span">
+              Норвич
+            </span>
+            <span class="menu-open__item-span">
+              Цвергшнауцер
+            </span>
+            <span class="menu-open__item-span">
+              Мальтипу
+            </span>
+            <span class="menu-open__item-span">
+              Ши-тцу
+            </span>
+            <span class="menu-open__item-span">
+              Такса
+            </span>
+            <span class="menu-open__item-span">
+              Французский бульдог
+            </span>
+            <span class="menu-open__item-span">
+              Бишон фризе
+            </span>
+            <span class="menu-open__item-span">
+              Пудель
+            </span>
+          </div>
+
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              породы кошек
+            </h3>
+            <span class="menu-open__item-span">
+              Шотландская
+            </span>
+            <span class="menu-open__item-span">
+              Британская
+            </span>
+            <span class="menu-open__item-span">
+              Мейн-кун
+            </span>
+          </div>
+          <div class="menu-open__bottom">
+            <button class="menu-open__btn btn-gold btn-applic">
+              связаться с нами
+            </button>
+            <div class="menu-open__bottom-contacts">
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/facebook-green.svg" alt="facebook">
+              </a>
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/vk-green.svg" alt="vk">
+              </a>
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/instagram-green.svg " alt="instagramm">
+              </a>
             </div>
-            <button class="contacts-top__item-2-button btn-gold">построить маршрут</button>
           </div>
         </div>
-      </div>
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__main" href="#">
+            Главная
+          </a>
+          <div class="breadcrumbs__dot"></div>
+          <p class="breadcrumbs__second">
+            Контакты
+          </p>
+        </div>
 
+        <div class="contacts-top">
+          <h2 class="contacts-top__title white-title">
+            наши контакты
+          </h2>
+          <div class="contacts-top__inner">
+            <div class="contacts-top__item">
+              <h3 class="contacts-top__item-info-title">
+                алматы
+              </h3>
+              <div class="contacts-top__item-info">
+                <p class="contacts-top__item-info-adress">
+                  г. Алматы, ул. Предгорная 33
+                </p>
+                <p class="contacts-top__item-info-time">
+                  С 8:00 до 20:00 без выходных
+                </p>
+                <p class="contacts-top__item-info-tel">
+                  +7 (222) 222-22-22
+                </p>
+              </div>
+              <a class="contacts-top__item-email">
+                Напишите нам<span>nazvanie@email.com</span>
+              </a>
+              <div class="contacts-top__item-images">
+                <a href="#">
+                  <img class="contacts-top__item-img" src="images/contacts/vk.png" alt="vk">
+                </a>
+                <a href="#">
+                  <img class="contacts-top__item-img" src="images/contacts/facebook.png" alt="facebook">
+                </a>
+                <a href="#">
+                  <img class="contacts-top__item-img" src="images/contacts/instagramm.png" alt="instagram">
+                </a>
+              </div>
+              <button class="contacts-top__item-button btn-gold btn-applic">связаться с нами</button>
+            </div>
+            <div class="contacts-top__item-2">
+              <iframe class="contacts-top__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21726.7465035408!2d37.53488937786692!3d47.10214226820457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e335da0e7bc3%3A0x32c61dcd41c1b0bc!2z0JTRgNCw0LzRgtC10LDRgtGA!5e0!3m2!1sru!2sru!4v1696013459560!5m2!1sru!2sru"
+                width="716" height="478" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="contacts-top__item-2-time">
+                <img class="contacts-top__item-2-time-img" src="images/contacts/time-white.png" alt="time">
+                <span>работаем</span>
+                с 8.00 до 20-00
+              </div>
+              <button class="contacts-top__item-2-button btn-gold">построить маршрут</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </header>
 
@@ -341,9 +486,9 @@
             </ul>
           </div>
         </div>
-<div class="footer__inner-image">
-  <img class="footer__inner-img" src="images/dog-footer.png" alt="dog">
-</div>
+        <div class="footer__inner-image">
+          <img class="footer__inner-img" src="images/dog-footer.png" alt="dog">
+        </div>
         <div class="footer__inner-content">
           <div class="footer__inner-content-right">
             <div class="footer__inner-content-right-box">
@@ -387,6 +532,9 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

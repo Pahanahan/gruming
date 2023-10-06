@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.menu__btn').on('click', function () {
+    $('.menu-open').toggleClass('menu-open--active');
+  });
+
   $('.questions__choice-btn').on('click', function (e) {
     e.preventDefault();
     $('.questions__choice').addClass('questions__choice--disactive');

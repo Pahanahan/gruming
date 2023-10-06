@@ -80,14 +80,15 @@
       </h3>
       <form class="before__bottom-form" name="formReview" method="post">
         <div class="before__bottom-input-name-box">
-          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status_review()"
-            onchange="change_Status_review()" name="nameReview">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя"
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameReview">
         </div>
         <div class="before__bottom-input-tel-box">
           <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
             onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameAnimalReview">
         </div>
-        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()" onchange="change_Status_review()" name="textareaReview"></textarea>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()"
+          onchange="change_Status_review()" name="textareaReview"></textarea>
         <div class="review-popap__box">
           <p class="review-popap__text">
             Оцените сервис и оказанную услугу
@@ -129,92 +130,237 @@
     </div>
   </div>
 
-  <header class="header">
+  <header class="header"> 
     <div class="container">
-      <menu class="menu-margin-top"></menu>
-      <menu class="menu">
-        <button class="menu__btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Собаки
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Кошки
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Акции
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Салон
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
-              Блог
-            </a>
-          </li>
-        </ul>
-        <a class="menu__logo">
-          Proхвост
-        </a>
-        <div class="menu__contacts">
-          <a class="menu__address">
-            г. Алматы, ул. Предгорная, 33
+      <div class="header__container">
+        <menu class="menu-margin-top"></menu>
+        <menu class="menu">
+          <button class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Собаки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Кошки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Салон
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Блог
+              </a>
+            </li>
+          </ul>
+          <a class="menu__logo">
+            Proхвост
           </a>
-          <a class="menu__phone" href="tel:+79528230647">
-            8 (952) 823-06-47
-          </a>
-        </div>
-      </menu>
-      <div class="header__content">
-        <div class="header__content-left">
-          <h1 class="header__content-title">
-            Груминг питомца за 50 минут –
-            100% без стресса от 5 000 ₸
-          </h1>
-          <p class="header__content-text">
-            Благодаря мастерам с 5 летним стажем владеющими адаптационными техниками работы с питомцами
-          </p>
-          <div class="header__button-box">
-            <button class="header__button btn-gold btn-applic">
-              оставить заявку
-            </button>
-            <span>
-              Свяжемся с вами в течение 3 минут
+          <div class="menu__contacts">
+            <a class="menu__address">
+              г. Алматы, ул. Предгорная, 33
+            </a>
+            <a class="menu__phone" href="tel:+79528230647">
+              8 (952) 823-06-47
+            </a>
+          </div>
+        </menu>
+        <div class="menu-open">
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              наши услуги
+            </h3>
+            <span class="menu-open__item-span">
+              Гигиена
+            </span>
+            <span class="menu-open__item-span">
+              Экспресс-линька
+            </span>
+            <span class="menu-open__item-span">
+              Мытье и сушка
+            </span>
+            <span class="menu-open__item-span">
+              Тримминг
+            </span>
+            <span class="menu-open__item-span">
+              Стрижка
+            </span>
+            <span class="menu-open__item-span">
+              Стрижка когтей
+            </span>
+            <span class="menu-open__item-span">
+              Чистка ушей и глаз
+            </span>
+            <span class="menu-open__item-span">
+              Чистка зубов
+            </span>
+            <span class="menu-open__item-span">
+              SPA
             </span>
           </div>
-          <div class="header__content-info">
-            <div class="header__content-info-item header__content-info-garant">
-              100% гарантия безопасности и стерильности
-            </div>
-            <div class="header__content-info-item header__content-info-master">
-              Сертифицированные мастера со стажем от 5 лет
-            </div>
-            <div class="header__content-info-item header__content-info-percent">
-              Скидка 10% на первое посещение
-            </div>
-            <div class="header__content-info-item header__content-info-profession">
-              Профессиональная
-              косметика и инструменты
+
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              породы собак
+            </h3>
+            <span class="menu-open__item-span">
+              Пекинес
+            </span>
+            <span class="menu-open__item-span">
+              Мальтезе
+            </span>
+            <span class="menu-open__item-span">
+              Лабрадор
+            </span>
+            <span class="menu-open__item-span">
+              Чау-чау
+            </span>
+            <span class="menu-open__item-span">
+              Сиба-ину
+            </span>
+            <span class="menu-open__item-span">
+              Эрдельтерьер
+            </span>
+            <span class="menu-open__item-span">
+              Корги
+            </span>
+            <span class="menu-open__item-span">
+              Хаски
+            </span>
+            <span class="menu-open__item-span">
+              Самоед
+            </span>
+            <span class="menu-open__item-span">
+              Фокстерьер
+            </span>
+            <span class="menu-open__item-span">
+              Спаниэль
+            </span>
+            <span class="menu-open__item-span">
+              Джек рассел
+            </span>
+            <span class="menu-open__item-span">
+              Шпиц
+            </span>
+            <span class="menu-open__item-span">
+              Чихуахуа
+            </span>
+            <span class="menu-open__item-span">
+              Китайская хохлатая
+            </span>
+            <span class="menu-open__item-span">
+              Йоркширский терьер
+            </span>
+            <span class="menu-open__item-span">
+              Норвич
+            </span>
+            <span class="menu-open__item-span">
+              Цвергшнауцер
+            </span>
+            <span class="menu-open__item-span">
+              Мальтипу
+            </span>
+            <span class="menu-open__item-span">
+              Ши-тцу
+            </span>
+            <span class="menu-open__item-span">
+              Такса
+            </span>
+            <span class="menu-open__item-span">
+              Французский бульдог
+            </span>
+            <span class="menu-open__item-span">
+              Бишон фризе
+            </span>
+            <span class="menu-open__item-span">
+              Пудель
+            </span>
+          </div>
+
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              породы кошек
+            </h3>
+            <span class="menu-open__item-span">
+              Шотландская
+            </span>
+            <span class="menu-open__item-span">
+              Британская
+            </span>
+            <span class="menu-open__item-span">
+              Мейн-кун
+            </span>
+          </div>
+          <div class="menu-open__bottom">
+            <button class="menu-open__btn btn-gold btn-applic">
+              связаться с нами
+            </button>
+            <div class="menu-open__bottom-contacts">
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/facebook-green.svg" alt="facebook">
+              </a>
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/vk-green.svg" alt="vk">
+              </a>
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/instagram-green.svg " alt="instagramm">
+              </a>
             </div>
           </div>
         </div>
-        <div class="header__content-right">
-          <div class="header__content-right-slider">
-            <div class="header__content-right-slider-item">
+        <div class="header__content">
+          <div class="header__content-left">
+            <h1 class="header__content-title">
+              Груминг питомца за 50 минут –
+              100% без стресса от 5 000 ₸
+            </h1>
+            <p class="header__content-text">
+              Благодаря мастерам с 5 летним стажем владеющими адаптационными техниками работы с питомцами
+            </p>
+            <div class="header__button-box">
+              <button class="header__button btn-gold btn-applic">
+                оставить заявку
+              </button>
+              <span>
+                Свяжемся с вами в течение 3 минут
+              </span>
             </div>
-            <div class="header__content-right-slider-item-2">
+            <div class="header__content-info">
+              <div class="header__content-info-item header__content-info-garant">
+                100% гарантия безопасности и стерильности
+              </div>
+              <div class="header__content-info-item header__content-info-master">
+                Сертифицированные мастера со стажем от 5 лет
+              </div>
+              <div class="header__content-info-item header__content-info-percent">
+                Скидка 10% на первое посещение
+              </div>
+              <div class="header__content-info-item header__content-info-profession">
+                Профессиональная
+                косметика и инструменты
+              </div>
+            </div>
+          </div>
+          <div class="header__content-right">
+            <div class="header__content-right-slider">
+              <div class="header__content-right-slider-item">
+              </div>
+              <div class="header__content-right-slider-item-2">
+              </div>
             </div>
           </div>
         </div>

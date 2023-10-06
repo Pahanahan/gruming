@@ -11,7 +11,7 @@
   background-color: $fff;
   margin-left: 50%;
   transform: translateX(-50%) translateY(25%);
-  z-index: 10;
+  z-index: 100;
   position: fixed;
 
   &--disactive {
@@ -51,6 +51,7 @@
   .before__bottom-form {
     flex-direction: column;
     gap: 22px;
+    z-index: 20;
   }
 
   .before__bottom-input-name,
@@ -88,7 +89,7 @@
   background-color: $fff;
   margin-left: 50%;
   transform: translateX(-50%) translateY(45%);
-  z-index: 10;
+  z-index: 100;
   position: fixed;
 
   &--disactive {
@@ -236,6 +237,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+
+  &__container {
+    position: relative;
+  }
 
   &__button-box {
     display: flex;
@@ -400,7 +405,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 36px 79px 0px rgba(0, 0, 0, 0.10), 0px 144px 144px 0px rgba(0, 0, 0, 0.09), 0px 323px 194px 0px rgba(0, 0, 0, 0.05), 0px 574px 230px 0px rgba(0, 0, 0, 0.01), 1px 897px 251px 0px rgba(0, 0, 0, 0.00);
+
+  &:last-child {
+    margin: 0 auto;
+  }
 
   &__btn {
     display: flex;
@@ -511,6 +521,75 @@
       height: 18px;
       background-image: url('../images/icons/phone.svg');
     }
+  }
+}
+
+.menu-open {
+  transform: translateY(-130%);
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: $fff;
+  width: 100%;
+  z-index: 10;
+  transition: all, 0.5s;
+  position: absolute;
+
+  &--active {
+    transform: translateY(2%);
+    transition: all, 0.5s;
+  }
+
+  &__item {
+    border-radius: 10px;
+    background-color: #F9F9F9;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__item-title {
+    @extend %bebas;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $text;
+    margin-bottom: 20px;
+  }
+
+  &__item-span {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 13px;
+      height: 14px;
+      background-image: url('../images/icons/check-green.png');
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 233px;
+    height: 57px;
+    margin-right: 50px;
+  }
+
+  &__bottom-contacts {
+    display: flex;
+  }
+
+  &__bottom-link {
+    margin-right: 22px;
   }
 }
 
@@ -4854,7 +4933,7 @@
       width: 83px;
       height: 40px;
       background-image: url('../images/video/girl-2.png');
-      z-index: 100;
+      z-index: 20;
     }
   }
 
@@ -4889,21 +4968,10 @@
     position: absolute;
     content: '';
     top: -109px;
-    right: -115px;
-    width: 333px;
-    height: 333px;
+    right: -33px;
+    width: 250px;
+    height: 215px;
     background-image: url('../images/dog-blog.png');
-    background-repeat: no-repeat;
-  }
-
-  &::before {
-    position: absolute;
-    content: '';
-    top: 74px;
-    right: -144px;
-    width: 333px;
-    height: 333px;
-    background-image: url('../images/dog-blog-2.svg');
     background-repeat: no-repeat;
   }
 }
@@ -5394,18 +5462,202 @@
 }
 
 .video-white {
-background-color: #fff;
+  background-color: #fff;
+  margin-bottom: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .block-white {
   background-color: #f9f9f9;
   background-image: none;
+
   &__title,
   &__text,
   &__label-input-text,
   &__text-girl {
     color: $text;
   }
+}
+
+.vacancy {
+  margin-bottom: 150px;
+  position: relative;
+  background-image: url('../images/vacancy/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    border-radius: 20px;
+    max-width: 792px;
+    margin: 0 auto;
+  }
+
+  &__inner-top {
+    padding: 30px;
+    background: linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%);
+    display: flex;
+    justify-content: center;
+    color: $fff;
+    font-size: 20px;
+    gap: 33px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  &__inner-top-salary {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: 0;
+      width: 30px;
+      height: 18px;
+      background-image: url('../images/vacancy/salary.svg');
+    }
+  }
+
+  &__inner-top-work {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: 0;
+      width: 30px;
+      height: 18px;
+      background-image: url('../images/vacancy/salary.svg');
+    }
+  }
+
+  &__inner-box {
+    padding: 50px 50px 30px 50px;
+    background-color: #F9F9F9;
+
+  }
+
+  &__item {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__item-title {
+    @extend %bebas;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__item-text {
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+
+  &__item-li {
+    padding-left: 22px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 2px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-image: url('../images/vacancy/check.svg');
+    }
+  }
+
+  &__inner-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(94deg, #ECAB28 -15.76%, #FFDD9E 49.27%, #FFB844 117.63%);
+  }
+}
+
+.block-green {
+  background: linear-gradient(180deg, #2BA688 0%, #0D4F3D 100%);
+}
+
+.job-test {
+  margin-bottom: 150px;
+
+  &__bg {
+    background-image: url('../images/vacancy/test.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__box {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    text-align: center;
+    color: $fff;
+    padding-left: 34px;
+    margin-bottom: 33px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -3px;
+      left: -6px;
+      width: 30px;
+      height: 24px;
+      background-image: url('../images/vacancy/1.svg');
+    }
+  }
+
+  &__textarea {
+    display: block;
+    border-radius: 10px;
+    width: 894px;
+    height: 173px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    width: 233px;
+height: 57px;
+  } 
+
 }
 
 
