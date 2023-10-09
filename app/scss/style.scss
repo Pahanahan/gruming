@@ -5655,9 +5655,152 @@
 
   &__button {
     width: 233px;
-height: 57px;
-  } 
+    height: 57px;
+  }
+}
 
+.promotions {
+  margin-bottom: 150px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 150px;
+  }
+
+  &__item {
+    border-radius: 20px;
+    background-color: #8050A3;
+    padding: 30px;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__item-title {
+    color: #FFF;
+    @extend %bebas;
+    font-size: 36px;
+    max-width: 277px;
+    margin-bottom: 20px;
+  }
+
+  &__item-text {
+    color: $fff;
+    line-height: 120%;
+    max-width: 255px;
+    margin-bottom: 20px;
+  }
+
+  &__item-text-2 {
+    margin-bottom: 0;
+  }
+
+  &__item-percent {
+    @extend %cera-700;
+    line-height: 120%;
+    color: #8050A3;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $fff;
+    max-width: 110px;
+    margin-bottom: 80px;
+  }
+
+  &__item-btn {
+    width: 233px;
+    height: 57px;
+    margin-bottom: 20px;
+  }
+
+  &__item-4 {
+    background-image: url('../images/promotions/item-4.png');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  &__img {
+    position: absolute;
+  }
+
+  &__img-1 {
+    bottom: 0;
+    right: 34px;
+    z-index: 10;
+  }
+
+  &__img-2 {
+    bottom: 0;
+    right: 2px;
+  }
+
+  &__img-3 {
+    bottom: 39px;
+    right: 68px;
+  }
+
+  &__img-4 {
+    bottom: 4px;
+    right: 247px;
+  }
+
+  &__img-5 {
+    top: 30px;
+    right: 38px;
+  }
+
+  &__img-6 {
+    bottom: 0;
+    right: 20px;
+  }
+
+  &__img-7 {
+    bottom: 14px;
+    right: 263px;
+  }
+
+  &__img-8 {
+    top: 91px;
+    right: 253px;
+  }
+
+  &__img-9 {
+    top: 46px;
+    right: 18px;
+  }
+
+  &__img-10 {
+    bottom: 0;
+    right: -115px;
+  }
+
+  &__img-11 {
+    top: 61px;
+    right: 259px;
+  }
+
+  &__img-12 {
+    top: 16px;
+    right: 91px;
+  }
+
+  &__img-13 {
+    top: 53px;
+    right: 238px;
+  }
+
+  &__img-14 {
+    bottom: 33px;
+    right: 19px;
+  }
+
+  .block {
+    margin-bottom: 150px;
+  }
 }
 
 

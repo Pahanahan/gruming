@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="application application--disactive">
+    <button class="application__btn-close">
+      <img src="images/icons/close-violet.svg" alt="close">
+    </button>
+    <div class="application__inner">
+      <h3 class="application__title title">
+        Запишитесь на услуги студии «PROХВОСТ»
+      </h3>
+      <p class="application__text">
+        Просто оставьте свои контакты и мы свяжемся с вами
+        <span>в течение 3 минут</span>
+      </p>
+      <form class="before__bottom-form" name="registration" method="post">
+        <div class="before__bottom-input-name-box">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя" onkeyup="change_Status()"
+            onchange="change_Status()" name="name">
+        </div>
+        <div class="before__bottom-input-tel-box">
+          <input class="before__bottom-input-tel" id="phone" type="number" placeholder="+7 (___) ___ ___ __"
+            onkeyup="change_Status()" onchange="change_Status()" name="tel">
+        </div>
+        <button class="before__bottom-btn btn-gold btn-application" type="submit" name="start">
+          ОСТАВИТЬ ЗАЯВКУ
+        </button>
+        <label class="before__bottom-label">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status()"
+            onchange="change_Status()" name="check">
+          <span class="discount__bottom-checkbox"></span>
+          <span class="discount__bottom-input-text">
+            Согласие на обработку персональных данных
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <div class="thanks thanks--disactive">
+    <div class="container">
+      <div class="thanks__inner">
+        <button class="thanks__btn-close">
+          <img src="images/icons/close-violet.svg" alt="close">
+        </button>
+        <h3 class="thanks__title title">
+          спасибо!
+        </h3>
+        <p class="thanks__text">
+          Ваша заявка принята! Мы свяжемся
+          с вами в течение 3 минут
+        </p>
+        <img class="thanks__img" src="images/girl-thanks.png" alt="thanks">
+        <button class="thanks__btn btn-gold">
+          понятно, спасибо
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="review-popap review-popap--disactive">
+    <button class="review-popap__btn-close">
+      <img src="images/icons/close-violet.svg" alt="close">
+    </button>
+    <div class="review-popap__inner">
+      <h3 class="review-popap__title title">
+        МОЙ ОТЗЫВ
+      </h3>
+      <form class="before__bottom-form" name="formReview" method="post">
+        <div class="before__bottom-input-name-box">
+          <input class="before__bottom-input-name" type="text" placeholder="Введите ваше имя"
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameReview">
+        </div>
+        <div class="before__bottom-input-tel-box">
+          <input class="before__bottom-input-tel" id="phone" type="text" placeholder="Имя питомца"
+            onkeyup="change_Status_review()" onchange="change_Status_review()" name="nameAnimalReview">
+        </div>
+        <textarea class="before__bottom-textarea" placeholder="Введите текст отзыва" onkeyup="change_Status_review()"
+          onchange="change_Status_review()" name="textareaReview"></textarea>
+        <div class="review-popap__box">
+          <p class="review-popap__text">
+            Оцените сервис и оказанную услугу
+          </p>
+          <div class="review-popap__star"></div>
+        </div>
+        <button class="before__bottom-btn btn-gold btn-review" type="submit" name="startReview">
+          ОСТАВИТЬ ЗАЯВКУ
+        </button>
+        <label class="before__bottom-label">
+          <input class="discount__bottom-input-check" type="checkbox" onkeyup="change_Status_review()"
+            onchange="change_Status_review()" name="checkReview">
+          <span class="discount__bottom-checkbox"></span>
+          <span class="discount__bottom-input-text">
+            Согласие на обработку персональных данных
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <div class="thanks-review thanks-review--disactive">
+    <div class="container">
+      <div class="thanks__inner">
+        <button class="thanks__btn-close">
+          <img src="images/icons/close-violet.svg" alt="close">
+        </button>
+        <h3 class="thanks__title title">
+          спасибо!
+        </h3>
+        <p class="thanks__text">
+          Мы ценим вашу обратную связь! Она помогает делать наш сервис еще лучше.
+        </p>
+        <img class="thanks__img" src="images/girl-thanks-review.png" alt="thanks">
+        <button class="thanks__btn btn-gold">
+          понятно, спасибо
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header header-contacts">
+    <div class="container">
+      <div class="header__container">
+        <menu class="menu-margin-top"></menu>
+        <menu class="menu">
+          <button class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Собаки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Кошки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Салон
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Блог
+              </a>
+            </li>
+          </ul>
+          <a class="menu__logo">
+            Proхвост
+          </a>
+          <div class="menu__contacts">
+            <a class="menu__address">
+              г. Алматы, ул. Предгорная, 33
+            </a>
+            <a class="menu__phone" href="tel:+79528230647">
+              8 (952) 823-06-47
+            </a>
+          </div>
+        </menu>
+        <div class="menu-open">
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              наши услуги
+            </h3>
+            <span class="menu-open__item-span">
+              Гигиена
+            </span>
+            <span class="menu-open__item-span">
+              Экспресс-линька
+            </span>
+            <span class="menu-open__item-span">
+              Мытье и сушка
+            </span>
+            <span class="menu-open__item-span">
+              Тримминг
+            </span>
+            <span class="menu-open__item-span">
+              Стрижка
+            </span>
+            <span class="menu-open__item-span">
+              Стрижка когтей
+            </span>
+            <span class="menu-open__item-span">
+              Чистка ушей и глаз
+            </span>
+            <span class="menu-open__item-span">
+              Чистка зубов
+            </span>
+            <span class="menu-open__item-span">
+              SPA
+            </span>
+          </div>
+
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              породы собак
+            </h3>
+            <span class="menu-open__item-span">
+              Пекинес
+            </span>
+            <span class="menu-open__item-span">
+              Мальтезе
+            </span>
+            <span class="menu-open__item-span">
+              Лабрадор
+            </span>
+            <span class="menu-open__item-span">
+              Чау-чау
+            </span>
+            <span class="menu-open__item-span">
+              Сиба-ину
+            </span>
+            <span class="menu-open__item-span">
+              Эрдельтерьер
+            </span>
+            <span class="menu-open__item-span">
+              Корги
+            </span>
+            <span class="menu-open__item-span">
+              Хаски
+            </span>
+            <span class="menu-open__item-span">
+              Самоед
+            </span>
+            <span class="menu-open__item-span">
+              Фокстерьер
+            </span>
+            <span class="menu-open__item-span">
+              Спаниэль
+            </span>
+            <span class="menu-open__item-span">
+              Джек рассел
+            </span>
+            <span class="menu-open__item-span">
+              Шпиц
+            </span>
+            <span class="menu-open__item-span">
+              Чихуахуа
+            </span>
+            <span class="menu-open__item-span">
+              Китайская хохлатая
+            </span>
+            <span class="menu-open__item-span">
+              Йоркширский терьер
+            </span>
+            <span class="menu-open__item-span">
+              Норвич
+            </span>
+            <span class="menu-open__item-span">
+              Цвергшнауцер
+            </span>
+            <span class="menu-open__item-span">
+              Мальтипу
+            </span>
+            <span class="menu-open__item-span">
+              Ши-тцу
+            </span>
+            <span class="menu-open__item-span">
+              Такса
+            </span>
+            <span class="menu-open__item-span">
+              Французский бульдог
+            </span>
+            <span class="menu-open__item-span">
+              Бишон фризе
+            </span>
+            <span class="menu-open__item-span">
+              Пудель
+            </span>
+          </div>
+
+          <div class="menu-open__item">
+            <h3 class="menu-open__item-title">
+              породы кошек
+            </h3>
+            <span class="menu-open__item-span">
+              Шотландская
+            </span>
+            <span class="menu-open__item-span">
+              Британская
+            </span>
+            <span class="menu-open__item-span">
+              Мейн-кун
+            </span>
+          </div>
+          <div class="menu-open__bottom">
+            <button class="menu-open__btn btn-gold btn-applic">
+              связаться с нами
+            </button>
+            <div class="menu-open__bottom-contacts">
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/facebook-green.svg" alt="facebook">
+              </a>
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/vk-green.svg" alt="vk">
+              </a>
+              <a class="menu-open__bottom-link" href="#">
+                <img src="images/icons/instagram-green.svg " alt="instagramm">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__main" href="#">
+            Главная
+          </a>
+          <div class="breadcrumbs__dot"></div>
+          <p class="breadcrumbs__second">
+            Контакты
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="blog-page">
+      <div class="container">
+        <h2 class="blog-page__title title">
+          наш блог
+        </h2>
+        <div class="blog-page__top">
+          <p class="blog-page__top-text">
+            Пишем о том, как правильно ухаживать
+            за домашними питомцами
+          </p>
+          <div class="blog-page__top-tegs">
+            <button class="blog-page__top-btn">
+              #Воспитание
+            </button>
+            <button class="blog-page__top-btn">
+              #Здоровье
+            </button>
+            <button class="blog-page__top-btn">
+              #Уход
+            </button>
+            <button class="blog-page__top-btn">
+              #Груминг
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer-index">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-box">
+          <div class="footer__inner-box-left">
+            <a class="menu__logo">
+              Proхвост
+            </a>
+            <span class="footer__inner-box-span">
+              Груминг для ваших<br>
+              домашних животных
+            </span>
+            <button class="footer__btn btn-gold btn-applic">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+            <div class="footer__inner-box-links">
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/vk.svg" alt="">
+              </a>
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/facebook.svg" alt="">
+              </a>
+              <a class="footer__inner-box-link" href="#">
+                <img src="images/icons/instagram.svg" alt="instagram">
+              </a>
+            </div>
+            <p class="footer__inner-box-text">
+              Согласие на обработку данных
+            </p>
+            <p class="footer__inner-box-text">
+              Политика конфиденциальности
+            </p>
+          </div>
+          <div class="footer__inner-content-left">
+            <h4 class="footer__inner-content-left-title">
+              Услуги
+            </h4>
+            <ul class="footer__inner-content-list">
+              <li class="footer__inner-content-item">
+                Стрижка собак
+              </li>
+              <li class="footer__inner-content-item">
+                Комплексный уход
+              </li>
+              <li class="footer__inner-content-item">
+                Приучение к грумингу
+              </li>
+              <li class="footer__inner-content-item">
+                Аппаратный лапакюр
+              </li>
+              <li class="footer__inner-content-item">
+                Мытье
+              </li>
+              <li class="footer__inner-content-item">
+                SPA
+              </li>
+              <li class="footer__inner-content-item">
+                Чистка зубов
+              </li>
+              <li class="footer__inner-content-item">
+                Покраска
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__inner-image">
+          <img class="footer__inner-img" src="images/dog-footer.png" alt="dog">
+        </div>
+        <div class="footer__inner-content">
+          <div class="footer__inner-content-right">
+            <div class="footer__inner-content-right-box">
+              <div class="footer__inner-content-links">
+                <a class="footer__inner-content-link" href="#">
+                  собаки
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  Кошки
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  мастера
+                </a>
+              </div>
+              <div class="footer__inner-content-links">
+                <a class="footer__inner-content-link" href="#">
+                  салон
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  блог
+                </a>
+                <a class="footer__inner-content-link" href="#">
+                  о нас
+                </a>
+              </div>
+            </div>
+            <p class="footer__inner-content-tel">
+              8 (800) 000-00-00
+            </p>
+            <p class="footer__inner-content-email">
+              email@email.com
+            </p>
+            <p class="footer__inner-content-address">
+              г. Алматы, ул. Предгорная, 33
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
